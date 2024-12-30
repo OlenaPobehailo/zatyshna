@@ -6,7 +6,7 @@
 }
 
 .main {
-  padding: 80px;
+  padding: 100px 80px;
   display: flex;
   flex-direction: column;
   gap: 32px;
