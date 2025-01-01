@@ -1,0 +1,39 @@
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+
+  @media (max-width: 767px) {
+    display: flex;
+  }
+}
+
+.burger span {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #a45680;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  transform-origin: 1px;
+}
+
+.burger.open span:first-child {
+  transform: rotate(45deg);
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}

@@ -3,14 +3,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import css from "./Header.module.css";
+import Burger from "./Burger/Burger";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null as string | null);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
@@ -28,15 +25,7 @@ const Header = () => {
           Zatyshna
         </Link>
 
-        <button
-          className={`${css.burger} ${isMenuOpen ? css.active : ""}`}
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <Burger isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
 
         <ul className={`${css.navList} ${isMenuOpen ? css.open : ""}`}>
           <li className={css.navItem}>
