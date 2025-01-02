@@ -1,12 +1,15 @@
 .header {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  padding: 1rem 1rem;
+  padding: 0 1rem;
   background-color: var(--header-bg);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
   z-index: 2;
 }
+
 
 .nav {
   display: flex;
@@ -18,15 +21,21 @@
   font-family: "SeaweedScript";
   font-weight: 400;
   font-style: italic;
-  font-size: 2.5rem;
-  color: var(--primary-accent);
+  font-size: 2rem;
+  color: var(--pink-color);
+  transition: all 0.3s ease;
+  z-index: 5;
 
   @media (min-width: 768px) {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   @media (min-width: 1440px) {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -66,15 +75,11 @@
     flex-direction: row;
     gap: 2rem;
   }
-
-  .burger {
-    display: none;
-  }
 }
 
 .navLink {
   font-size: 1.5rem;
-  color: var(--primary-accent);
+  color: var(--pink-color);
   display: inline-block;
   transition: color 0.3s ease, transform 0.3s ease;
 
@@ -88,24 +93,31 @@
 }
 
 .navLink:hover {
-  color: var(--dark-accent);
   transform: scale(1.05);
+  text-decoration: underline;
 }
 
 .dropdownMenu {
-  display: none;
-  position: relative;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
   background-color: var(--header-bg);
   padding: 0.5rem 1rem;
   list-style: none;
-  transition: max-height 0.3s ease;
   max-height: 0;
   overflow: hidden;
+  width: 100%;
+  transition: max-height 1s ease;
 }
 
 .dropdownMenu.open {
   display: block;
   max-height: 10rem;
+
+  @media (min-width: 768px) {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
 }
 
 .navItem {

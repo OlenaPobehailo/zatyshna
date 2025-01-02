@@ -22,13 +22,21 @@ a {
 }
 
 :root {
-  --header-bg: #f4f4f4;
-  --footer-bg: #f4f4f4;
+  --header-bg: #f2e8b6;
+  --footer-bg: #f2e8b6;
   --main-bg: #ffffff;
-  --primary-accent: #a45680;
-  --light-accent: #d8a5bc;
-  --mint-accent: #a5d8c2;
-  --creamy-accent: #f2e4ec;
+
+  --pink-color: #d97e9f;
+  --brown-color: #733c30;
+  --mint-color: #a5d8c2;
+  --creamy-color: #f2e8b6;
+  --beige-color: #d9bca3;
+  --blue-color: #6f9abf;
+
+  --breakpoint-mobile: 360px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-laptop: 992px;
+  --breakpoint-desktop: 1440px;
 }
 
 ul,
