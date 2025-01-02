@@ -10,7 +10,7 @@
 .imageWrapper {
   width: 100%;
   position: relative;
-  padding-top: 45%;
+  padding-top: 47%;
 }
 
 .responsiveImage {
@@ -22,7 +22,7 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hero {
     align-items: flex-start;
   }
@@ -30,4 +30,4 @@
   .imageWrapper {
     padding-top: 60%;
   }
-}
+} */
