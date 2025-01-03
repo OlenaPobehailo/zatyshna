@@ -63,7 +63,7 @@ const Header = () => {
           <li className={css.navItem}>
             <div className={css.dropdown}>
               <Link
-                href="/book-lesson"
+                href="/lessons"
                 className={css.navLink}
                 onClick={() => toggleDropdown("lessons")}
               >
@@ -75,22 +75,27 @@ const Header = () => {
                 }`}
               >
                 <li>
-                  <Link href="/book-lesson" className={css.dropdownLink}>
+                  <Link href="/lessons" className={css.dropdownLink}>
                     .....
                   </Link>
                 </li>
                 <li>
-                  <Link href="/book-lesson" className={css.dropdownLink}>
+                  <Link href="/lessons" className={css.dropdownLink}>
                     .....
                   </Link>
                 </li>
                 <li>
-                  <Link href="/book-lesson" className={css.dropdownLink}>
+                  <Link href="/lessons" className={css.dropdownLink}>
                     .....
                   </Link>
                 </li>
               </ul>
             </div>
+          </li>
+          <li className={css.navItem}>
+            <Link href="/testimonials" className={css.navLink} onClick={closeMenu}>
+              Відгуки
+            </Link>
           </li>
           <li className={css.navItem}>
             <Link href="/contacts" className={css.navLink} onClick={closeMenu}>
