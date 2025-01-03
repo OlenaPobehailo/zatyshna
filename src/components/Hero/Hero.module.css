@@ -22,6 +22,31 @@
   object-fit: cover;
 }
 
+.area {
+  cursor: pointer;
+}
+
+.spark {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: var(--creamy-color);
+  border-radius: 50%;
+  animation: sparkFly 1s ease-out;
+  pointer-events: none;
+}
+
+@keyframes sparkFly {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(var(--dx) * 1px), calc(var(--dy) * 1px)) scale(0.5);
+    opacity: 0;
+  }
+}
+
 /* @media (max-width: 768px) {
   .hero {
     align-items: flex-start;
@@ -29,5 +54,30 @@
 
   .imageWrapper {
     padding-top: 60%;
+  }
+} */
+
+/* .firework {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: var(--pink-color);
+  border-radius: 50%;
+  animation: explode 1s ease-out forwards;
+  pointer-events: none; 
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(3);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
   }
 } */

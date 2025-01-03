@@ -1,7 +1,16 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
-import css from "./Hero.module.css";
 import { useResponsiveImageMapAreas } from "@/hooks/useResponsiveImageMapAreas";
+import css from "./Hero.module.css";
+
+type Spark = {
+  x: number;
+  y: number;
+  id: string;
+  angle: number;
+  distance: number;
+};
 
 const Hero = () => {
   const originalAreas = [
@@ -20,7 +29,7 @@ const Hero = () => {
       shape: "rect" as const,
     },
     {
-      coords: "1350,900,1750,700",
+      coords: "1400,900,1850,700",
       href: "/testimonials",
       title: "Вежа досягнень",
       alt: "Вежа досягнень",
@@ -51,6 +60,28 @@ const Hero = () => {
     originalHeight
   );
 
+  const [sparks, setSparks] = useState<Spark[]>([]);
+
+  const handleMouseOver = (event: React.MouseEvent<HTMLAreaElement>) => {
+    const rect = imgRef.current!.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    const sparksArray = Array.from({ length: 10 }).map((_, index) => ({
+      x,
+      y,
+      id: `${Date.now()}-${index}`,
+      angle: Math.random() * 360,
+      distance: Math.random() * 150,
+    }));
+
+    setSparks((prev) => [...prev, ...sparksArray]);
+
+    setTimeout(() => {
+      setSparks((prev) => prev.filter((spark) => !sparksArray.includes(spark)));
+    }, 1000);
+  };
+
   return (
     <section className={css.hero}>
       <div className={css.imageWrapper}>
@@ -73,9 +104,24 @@ const Hero = () => {
               coords={area.coords}
               shape={area.shape}
               className={css.area}
+              onMouseOver={handleMouseOver}
             />
           ))}
         </map>
+        {sparks.map((spark) => (
+          <div
+            key={spark.id}
+            className={css.spark}
+            style={
+              {
+                top: `${spark.y}px`,
+                left: `${spark.x}px`,
+                "--dx": Math.cos(spark.angle) * spark.distance,
+                "--dy": Math.sin(spark.angle) * spark.distance,
+              } as React.CSSProperties
+            }
+          />
+        ))}
       </div>
     </section>
   );
