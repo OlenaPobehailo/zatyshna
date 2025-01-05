@@ -37,7 +37,7 @@ const Header = () => {
               >
                 Про школу
               </Link>
-              <ul
+              {/* <ul
                 className={`${css.dropdownMenu} ${
                   activeDropdown === "about" ? css.open : ""
                 }`}
@@ -57,7 +57,7 @@ const Header = () => {
                     .....
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </li>
           <li className={css.navItem}>
@@ -69,7 +69,7 @@ const Header = () => {
               >
                 Уроки
               </Link>
-              <ul
+              {/* <ul
                 className={`${css.dropdownMenu} ${
                   activeDropdown === "lessons" ? css.open : ""
                 }`}
@@ -89,11 +89,15 @@ const Header = () => {
                     .....
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </li>
           <li className={css.navItem}>
-            <Link href="/testimonials" className={css.navLink} onClick={closeMenu}>
+            <Link
+              href="/testimonials"
+              className={css.navLink}
+              onClick={closeMenu}
+            >
               Відгуки
             </Link>
           </li>

@@ -16,7 +16,8 @@ const Hero = () => {
   const originalAreas = [
     {
       coords: "650,900,1150,700",
-      href: "/",
+      // href: "/",
+      href: "#info",
       title: "Головна вежа",
       alt: "Головна вежа",
       shape: "rect" as const,

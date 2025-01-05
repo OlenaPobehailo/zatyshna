@@ -1,30 +1,9 @@
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  font-family: "Montserrat-Regular", sans-serif;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 :root {
-  --header-bg: #F4EAD6;
-  --footer-bg: #F4EAD6;
-  --main-bg: #ffffff;
+  --header-bg: #f4ead6;
+  --footer-bg: #f4ead6;
+  --main-bg: #f4ead6;
+  --text-color: #733c30;
+  --card-bg: #f4ead6;
 
   --pink-color: #d97e9f;
   --brown-color: #733c30;
@@ -32,17 +11,12 @@ a {
   --creamy-color: #f2e8b6;
   --beige-color: #d9bca3;
   --blue-color: #6f9abf;
+  --light-color: #f9f9f9;
 
   --breakpoint-mobile: 360px;
   --breakpoint-tablet: 768px;
   --breakpoint-laptop: 992px;
   --breakpoint-desktop: 1440px;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
 }
 
 @font-face {
@@ -75,4 +49,61 @@ li {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Montserrat-Regular", sans-serif;
+  background: var(--main-bg);
+  color: var(--text-color);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 44px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (min-width: 768px) {
+    padding: 62px 0;
+  }
 }
