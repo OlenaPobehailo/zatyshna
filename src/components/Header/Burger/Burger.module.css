@@ -1,5 +1,5 @@
 .burger {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
 
@@ -12,8 +12,8 @@
   cursor: pointer;
   z-index: 3;
 
-  @media (max-width: 767px) {
-    display: flex;
+  @media (min-width: 769px) {
+    display: none;
   }
 }
 

@@ -37,27 +37,6 @@ const Header = () => {
               >
                 Про школу
               </Link>
-              {/* <ul
-                className={`${css.dropdownMenu} ${
-                  activeDropdown === "about" ? css.open : ""
-                }`}
-              >
-                <li>
-                  <Link href="/about" className={css.dropdownLink}>
-                    .....
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className={css.dropdownLink}>
-                    .....
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className={css.dropdownLink}>
-                    .....
-                  </Link>
-                </li>
-              </ul> */}
             </div>
           </li>
           <li className={css.navItem}>
@@ -69,27 +48,6 @@ const Header = () => {
               >
                 Уроки
               </Link>
-              {/* <ul
-                className={`${css.dropdownMenu} ${
-                  activeDropdown === "lessons" ? css.open : ""
-                }`}
-              >
-                <li>
-                  <Link href="/lessons" className={css.dropdownLink}>
-                    .....
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/lessons" className={css.dropdownLink}>
-                    .....
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/lessons" className={css.dropdownLink}>
-                    .....
-                  </Link>
-                </li>
-              </ul> */}
             </div>
           </li>
           <li className={css.navItem}>
