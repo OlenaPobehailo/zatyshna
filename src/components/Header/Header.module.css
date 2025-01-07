@@ -110,6 +110,8 @@
 .navLink:hover {
   transform: scale(1.05);
   text-decoration: underline;
+  text-underline-offset: 3px;
+
 }
 
 .dropdownMenu {
