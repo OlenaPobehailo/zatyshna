@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "../Container";
 import css from "./Sasha.module.css";
+import Link from "next/link";
 
 const Sasha = () => {
   return (
@@ -17,121 +18,40 @@ const Sasha = () => {
             />
           </div>
           <div className={css.infoWrapper}>
-            <p className={css.greeting}>Привіт, я Саша</p>
+            <p className={css.greeting}>Олександра</p>
             <h1>
-              Та я вчитель <span>затишної англійської</span>
+              засновниця школи <span>Затишна</span>
             </h1>
-            <h2>
-              Тут ти знайдеш безпечне та тепле ком’юніті та дуже багато
-              корисностей англійської. Я допоможу тобі розібратись та справді
-              вивчити мову в безпечній та затишній атмосфері.
-            </h2>
           </div>
         </div>
-        <ul className={css.help}>
-          <li className={css.card}>
-            <Image
-              className={css.image}
-              src="/assets/images/features.png"
-              width="1024"
-              height="1024"
-              alt=""
-            />
-            <div className={css.description}>
-              <p className={css.descriptionTitle}>
-                Розберемося з твоїми знаннями
-              </p>
-              <p className={css.descriptionText}>
-                Оцінимо, що вже знаєш, а що варто підтягнути, щоб вчитися
-                максимально ефективно.
-              </p>
-            </div>
+      </section>
+      <section className={`section ${css.features}`}>
+        <div className={css.description}>
+          <p>
+            Набридли нудні підручники та вчителі, які засуджують за помилки?&#x1F914;
+          </p>
+          <h2>Хочеш заговорити та мати твердий С1?&#x2714;</h2>
+          <h2>
+            Тоді тобі до <Link href="/about">Zatyshna!</Link>&#x1F490;
+          </h2>
+        </div>
+
+        <ul className={css.featuresList}>
+          <li>&#x1F497; Заняття проводяться за неймовірними матеріалами!</li>
+          <li>&#x1F497; Розмовні заняття за серіалами та фільмами</li>
+          <li>
+            &#x1F497; Чай та кавка посеред заняття для ще більш затишної
+            атмосфери
           </li>
-          <li className={css.card}>
-            <Image
-              className={css.image}
-              src="/assets/images/features.png"
-              width="1024"
-              height="1024"
-              alt=""
-            />
-            <div className={css.description}>
-              <p className={css.descriptionTitle}>
-                Створимо план саме для тебе
-              </p>
-              <p className={css.descriptionText}>
-                Розробимо індивідуальну програму навчання, враховуючи твої
-                інтереси, цілі та рівень.
-              </p>
-            </div>
-          </li>
-          <li className={css.card}>
-            <Image
-              className={css.image}
-              src="/assets/images/features.png"
-              width="1024"
-              height="1024"
-              alt=""
-            />
-            <div className={css.description}>
-              <p className={css.descriptionTitle}>Покажу, як все це працює</p>
-              <p className={css.descriptionText}>
-                Поділюся своєю методикою, яка допоможе легко і швидко засвоювати
-                нову інформацію.
-              </p>
-            </div>
-          </li>
-          <li className={css.card}>
-            <Image
-              className={css.image}
-              src="/assets/images/features.png"
-              width="1024"
-              height="1024"
-              alt=""
-            />
-            <div className={css.description}>
-              <p className={css.descriptionTitle}>
-                Більше спілкування — результат
-              </p>
-              <p className={css.descriptionText}>
-                Зосередимося на практичних діалогах для застосування мови,
-                незалежно від рівня.
-              </p>
-            </div>
-          </li>
-          <li className={css.card}>
-            <Image
-              className={css.image}
-              src="/assets/images/features.png"
-              width="1024"
-              height="1024"
-              alt=""
-            />
-            <div className={css.description}>
-              <p className={css.descriptionTitle}>Знайдемо ідеальний темп</p>
-              <p className={css.descriptionText}>
-                Домовимося про зручний графік і темп навчання, щоб усе підходило
-                саме тобі.
-              </p>
-            </div>
-          </li>
-          <li className={css.card}>
-            <Image
-              className={css.image}
-              src="/assets/images/features.png"
-              width="1024"
-              height="1024"
-              alt=""
-            />
-            <div className={css.description}>
-              <p className={css.descriptionTitle}>Гнучкість у навчанні</p>
-              <p className={css.descriptionText}>
-                Будемо відстежувати твій прогрес, адаптувати програму та ставити
-                нові цілі по ходу навчання.
-              </p>
-            </div>
-          </li>
+          <li>&#x1F497; Цікава домашка</li>
+          <li>&#x1F497; Індивідуальна програма та підхід під кожного учня</li>
+          <li>&#x1F497; Гарантія результату</li>
         </ul>
+        <div className={css.buttonContainer}>
+          <Link href="/lessons" className={css.button}>Індивідуальні заняття</Link>
+          <Link href="/lessons" className={css.button}>Групові заняття</Link>
+          <Link href="/lessons" className={css.button}>Заняття з Олександрою</Link>
+        </div>
       </section>
     </Container>
   );

@@ -60,6 +60,11 @@ const Header = () => {
             </Link>
           </li>
           <li className={css.navItem}>
+            <Link href="/resources" className={css.navLink} onClick={closeMenu}>
+              Ресурси
+            </Link>
+          </li>
+          <li className={css.navItem}>
             <Link href="/contacts" className={css.navLink} onClick={closeMenu}>
               Контакти
             </Link>
