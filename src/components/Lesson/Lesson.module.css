@@ -1,0 +1,186 @@
+.lesson {
+}
+
+.lessonList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 100%;
+  }
+}
+
+.lessonItem {
+  background-color: #fff;
+  border: 3px solid var(--pink-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  @media screen and (min-width: 480px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(50% - 2rem);
+    min-height: 350px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: calc(33.333% - 2rem);
+    min-height: 410px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .lessonItem:nth-child(1) {
+    order: 1;
+  }
+
+  .lessonItem:nth-child(2) {
+    order: 3;
+  }
+
+  .lessonItem:nth-child(3) {
+    order: 2;
+  }
+}
+
+.lessonItem:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.lessonHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  padding: 0.3rem;
+  margin-bottom: 12px;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.lessonTitle {
+  width: 100%;
+  font-size: 1.2rem;
+  color: var(--pink-color);
+  margin-bottom: 0.5rem;
+  /* line-height: 1; */
+
+  @media screen and (min-width: 480px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.8rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 2rem;
+  }
+}
+
+.lessonTitle span {
+  font-size: 0.8rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.2rem;
+  }
+}
+
+.lessonSubtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: 768px) {
+    /* font-size: 1.2rem; */
+  }
+
+  @media screen and (min-width: 1440px) {
+    /* font-size: 1.4rem; */
+  }
+}
+
+.lessonPrice {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.6rem;
+  }
+}
+
+.lessonFeatures {
+  padding: 1rem;
+  margin: 0;
+  text-align: left;
+
+  @media screen and (min-width: 768px) {
+    padding: 1.5rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+  }
+}
+
+.lessonFeatures li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+
+  font-size: 1rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.1rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.3rem;
+  }
+}
+
+.lessonFeatures li:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.lessonFeatures li::before {
+  content: "\2714";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1, 8rem;
+  color: var(--pink-color);
+  line-height: 1;
+}
