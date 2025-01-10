@@ -19,22 +19,48 @@ const Sasha = () => {
           </div>
           <div className={css.infoWrapper}>
             <p className={css.greeting}>Олександра</p>
-            <h1>
-              засновниця школи <span>Затишна</span>
-            </h1>
+            <h2>
+              засновниця школи 
+              {/* <span>Затишна</span> */}
+            </h2>
+
+            <ul className={css.description}>
+              <li>
+                Набридли нудні підручники та вчителі, які засуджують за помилки?
+              </li>
+              <li>Хочеш заговорити та мати твердий С1?</li>
+              <li>
+                Тоді тобі до <Link href="/about">Zatyshna!</Link>
+              </li>
+            </ul>
           </div>
         </div>
+        <ul className={css.featuresList}>
+          <li>&#x1F497; Заняття проводяться за неймовірними матеріалами!</li>
+          <li>&#x1F497; Розмовні заняття за серіалами та фільмами</li>
+          <li>
+            &#x1F497; Чай та кавка посеред заняття для ще більш затишної
+            атмосфери
+          </li>
+          <li>&#x1F497; Цікава домашка</li>
+          <li>&#x1F497; Індивідуальна програма та підхід під кожного учня</li>
+          <li>&#x1F497; Гарантія результату</li>
+        </ul>
+
+        {/* <div className={css.buttonContainer}>
+            <Link href="/lessons" className={css.button}>
+              Індивідуальні заняття
+            </Link>
+            <Link href="/lessons" className={css.button}>
+              Групові заняття
+            </Link>
+            <Link href="/lessons" className={css.button}>
+              Заняття з Олександрою
+            </Link>
+          </div> */}
       </section>
-      <section className={`section ${css.features}`}>
-        <div className={css.description}>
-          <p>
-            Набридли нудні підручники та вчителі, які засуджують за помилки?&#x1F914;
-          </p>
-          <h2>Хочеш заговорити та мати твердий С1?&#x2714;</h2>
-          <h2>
-            Тоді тобі до <Link href="/about">Zatyshna!</Link>&#x1F490;
-          </h2>
-        </div>
+      {/* <section className={`section ${css.features}`}>
+        
 
         <ul className={css.featuresList}>
           <li>&#x1F497; Заняття проводяться за неймовірними матеріалами!</li>
@@ -52,7 +78,7 @@ const Sasha = () => {
           <Link href="/lessons" className={css.button}>Групові заняття</Link>
           <Link href="/lessons" className={css.button}>Заняття з Олександрою</Link>
         </div>
-      </section>
+      </section> */}
     </Container>
   );
 };
