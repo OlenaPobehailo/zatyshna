@@ -33,7 +33,8 @@ const Header = () => {
               <Link
                 href="/about"
                 className={css.navLink}
-                onClick={() => toggleDropdown("about")}
+                // onClick={() => toggleDropdown("about")}
+                onClick={closeMenu}
               >
                 Про школу
               </Link>
@@ -44,7 +45,8 @@ const Header = () => {
               <Link
                 href="/lessons"
                 className={css.navLink}
-                onClick={() => toggleDropdown("lessons")}
+                // onClick={() => toggleDropdown("lessons")}
+                onClick={closeMenu}
               >
                 Уроки
               </Link>
