@@ -7,15 +7,9 @@ import Burger from "./Burger/Burger";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null as string | null);
 
   const closeMenu = () => {
     setIsMenuOpen(false);
-    setActiveDropdown(null);
-  };
-
-  const toggleDropdown = (menu: string) => {
-    setActiveDropdown(activeDropdown === menu ? null : menu);
   };
 
   return (
@@ -30,24 +24,14 @@ const Header = () => {
         <ul className={`${css.navList} ${isMenuOpen ? css.open : ""}`}>
           <li className={css.navItem}>
             <div className={css.dropdown}>
-              <Link
-                href="/about"
-                className={css.navLink}
-                // onClick={() => toggleDropdown("about")}
-                onClick={closeMenu}
-              >
+              <Link href="/about" className={css.navLink} onClick={closeMenu}>
                 Про школу
               </Link>
             </div>
           </li>
           <li className={css.navItem}>
             <div className={css.dropdown}>
-              <Link
-                href="/lessons"
-                className={css.navLink}
-                // onClick={() => toggleDropdown("lessons")}
-                onClick={closeMenu}
-              >
+              <Link href="/lessons" className={css.navLink} onClick={closeMenu}>
                 Уроки
               </Link>
             </div>

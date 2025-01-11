@@ -94,7 +94,7 @@
 .description li {
   /* margin-bottom: 0.5rem; */
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding: 0.5rem 0 0.5rem;
   gap: 0.5rem;
@@ -150,7 +150,6 @@
     height: 36px;
   }
 }
-
 
 /* .description li::before {
   content: "\2714";
