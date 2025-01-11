@@ -110,6 +110,7 @@ section {
 
   @media (min-width: 1440px) {
     padding: 64px 0;
+    height: 100vh;
   }
 
   /* outline: 1px solid green; */

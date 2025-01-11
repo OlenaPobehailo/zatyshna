@@ -1,6 +1,7 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/Sections/Hero";
 import styles from "./page.module.css";
-import Sasha from "@/components/Sasha";
+import Sasha from "@/components/Sections/Sasha";
+import School from "@/components/Sections/School/School";
 
 export const metadata = {
   title: "Zatyshna",
@@ -12,6 +13,7 @@ export default function HomePage() {
     <div className={styles.page}>
       <Hero />
       <Sasha />
+      <School />
     </div>
   );
 }
