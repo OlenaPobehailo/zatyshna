@@ -1,9 +1,7 @@
-import Container from "../Container";
 import css from "./Lesson.module.css";
 
 const Lesson = () => {
   return (
-    <Container>
       <section className={`section ${css.lesson}`}>
         <ul className={css.lessonList}>
           <li className={css.lessonItem}>
@@ -57,7 +55,6 @@ const Lesson = () => {
           </li>
         </ul>
       </section>
-    </Container>
   );
 };
 
