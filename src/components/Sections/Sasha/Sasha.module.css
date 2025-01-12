@@ -20,15 +20,17 @@
   margin: 0 auto 1rem;
 
   @media screen and (min-width: 768px) {
-    margin: 24px auto;
-    width: 50%;
+    margin: 0 auto;
+    /* width: 50%; */
+    height: 50%;
+    width: auto;
     order: 2;
   }
 
   @media screen and (min-width: 1440px) {
-    height: calc(100vh - 128px);
+    /* height: calc(100vh - 128px);
     width: auto;
-    margin: 0 auto;
+    margin: 0 auto; */
   }
 }
 

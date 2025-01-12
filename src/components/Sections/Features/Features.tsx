@@ -9,27 +9,29 @@ const Features = () => {
         <ul className={css.featuresList}>
           <li>
             <Icon name="icon-heart" className={css.icon} />
-            Заняття проводяться за неймовірними матеріалами!
+            <span>Заняття проводяться за неймовірними матеріалами!</span>
           </li>
           <li>
             <Icon name="icon-heart" className={css.icon} />
-            Розмовні заняття за серіалами та фільмами
+            <span> Розмовні заняття за серіалами та фільмами</span>
           </li>
           <li>
             <Icon name="icon-heart" className={css.icon} />
-            Чай та кавка посеред заняття для ще більш затишної атмосфери
+            <span>
+              Чай та кавка посеред заняття для ще більш затишної атмосфери
+            </span>
           </li>
           <li>
             <Icon name="icon-heart" className={css.icon} />
-            Цікава домашка
+            <span>Цікава домашка</span>
           </li>
           <li>
             <Icon name="icon-heart" className={css.icon} />
-            Індивідуальна програма та підхід під кожного учня
+            <span>Індивідуальна програма та підхід під кожного учня</span>
           </li>
           <li>
             <Icon name="icon-heart" className={css.icon} />
-            Гарантія результату
+            <span>Гарантія результату</span>
           </li>
         </ul>
 

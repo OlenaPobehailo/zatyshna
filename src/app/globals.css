@@ -58,6 +58,10 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat-Regular", sans-serif;
   color: var(--text-color);
+
+  @media (max-width: 319px) {
+    overflow: scroll;
+  }
 }
 
 body {
@@ -97,7 +101,9 @@ img {
   height: auto;
 }
 
-section {
+.section {
+  display: inline-block;
+  vertical-align: middle;
   padding: 16px 0;
   display: flex;
   flex-direction: column;
@@ -105,23 +111,21 @@ section {
 
   @media (min-width: 768px) {
     display: block;
-    padding: 32px 0;
+    padding: 64px 0;
+    min-height: calc(90vh);
   }
 
   @media (min-width: 1440px) {
-    padding: 64px 0;
-    /* height: 100vh; */
+    padding: 128px 0;
   }
 
   /* outline: 1px solid green; */
 }
 
-section:nth-child(even) {
-  background-color: var(--main-bg); /* Основний фон */
-  /* color: var(--text-color); Колір тексту */
+.section:nth-child(even) {
+  background-color: var(--main-bg);
 }
 
-section:nth-child(odd) {
-  background-color: var(--white); /* Білий фон */
-  /* color: var(--main-bg); Текст контрастний до основного */
+.section:nth-child(odd) {
+  background-color: var(--white);
 }
