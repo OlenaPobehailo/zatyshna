@@ -1,0 +1,60 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+  margin: 0 auto;
+  max-width: 80%;
+
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    max-width: 40%;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    text-shadow: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 40%;
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 1.3rem;
+    padding: 1.2rem 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+.button.primary:hover {
+  background-color: var(--main-bg);
+  color: var(--pink-color);
+  border: 3px solid var(--pink-color);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.button:focus {
+  outline: 2px solid var(--pink-color);
+  outline-offset: 2px;
+}
+
+.button.primary {
+  background-color: var(--pink-color);
+  color: var(--main-bg);
+}
+
+.button.secondary {
+}
+
+.button.disabled {
+}

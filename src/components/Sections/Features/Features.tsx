@@ -1,5 +1,6 @@
 import Container from "@/components/Container";
 import Icon from "../../UI/Icon";
+import LinkButton from "@/components/UI/LinkButton";
 import css from "./Features.module.css";
 
 const Features = () => {
@@ -39,14 +40,14 @@ const Features = () => {
         Команда турботи
         </Link> */}
 
-        <a
+        <LinkButton
+          name="primary"
           href="https://t.me/zatyshna_support"
           target="_blank"
           rel="noopener noreferrer"
-          className={css.button}
         >
           Команда турботи
-        </a>
+        </LinkButton>
       </Container>
     </section>
   );

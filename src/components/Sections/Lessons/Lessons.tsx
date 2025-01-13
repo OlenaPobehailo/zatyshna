@@ -1,8 +1,11 @@
-import css from "./Lesson.module.css";
+import LinkButton from "@/components/UI/LinkButton";
+import Container from "../../Container";
+import css from "./Lessons.module.css";
 
-const Lesson = () => {
+const Lessons = () => {
   return (
-      <section className={`section ${css.lesson}`}>
+    <section className={`section ${css.lesson}`}>
+      <Container>
         <ul className={css.lessonList}>
           <li className={css.lessonItem}>
             <div className={css.lessonHeader}>
@@ -54,8 +57,18 @@ const Lesson = () => {
             </ul>
           </li>
         </ul>
-      </section>
+
+        <LinkButton
+          name="primary"
+          href="https://t.me/zatyshna_support"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Записатись на заняття
+        </LinkButton>
+      </Container>
+    </section>
   );
 };
 
-export default Lesson;
+export default Lessons;

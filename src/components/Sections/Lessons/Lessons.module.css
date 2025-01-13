@@ -1,4 +1,4 @@
-.lesson {
+.lessons {
 }
 
 .lessonList {
@@ -8,9 +8,9 @@
   align-items: center;
   gap: 2rem;
 
-  margin: 0 auto;
+  margin: 0 auto 24px;
   padding: 1rem;
-  max-width: 100%;
+  width: 100%;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -18,10 +18,16 @@
     justify-content: center;
     gap: 2rem;
     max-width: 100%;
+    margin: 0 auto 3rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 4rem;
   }
 }
 
 .lessonItem {
+  width: 100%;
   background-color: #fff;
   border: 3px solid var(--pink-color);
   border-radius: 8px;
@@ -59,7 +65,6 @@
 }
 
 .lessonItem:hover {
-  transform: scale(1.02);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
