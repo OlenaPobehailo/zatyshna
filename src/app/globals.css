@@ -84,6 +84,7 @@ ul,
 ol,
 li {
   list-style: none;
+  padding: 0;
 }
 
 button {
