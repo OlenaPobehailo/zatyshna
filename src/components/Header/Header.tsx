@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Burger from "./Burger";
+import Logo from "../Logo";
 import css from "./Header.module.css";
-import Burger from "./Burger/Burger";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Header = () => {
     <header className={css.header}>
       <nav className={css.nav}>
         <Link href="/" className={css.logo}>
-          Zatyshna
+          <Logo />
         </Link>
 
         <Burger isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
