@@ -3,6 +3,7 @@ import Sasha from "@/components/Sections/Sasha";
 import Features from "@/components/Sections/Features";
 import Lessons from "@/components/Sections/Lessons";
 import styles from "./page.module.css";
+import Testimonials from "@/components/Sections/Testimonials";
 
 export const metadata = {
   title: "Zatyshna",
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Hero />
       <Sasha />
       <Features />
+      <Testimonials />
       <Lessons />
     </div>
   );

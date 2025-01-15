@@ -128,5 +128,5 @@ img {
 }
 
 .section:nth-child(odd) {
-  background-color: var(--white);
+  background-color: white;
 }
