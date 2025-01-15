@@ -73,7 +73,7 @@ const Hero = () => {
       y,
       id: `${Date.now()}-${index}`,
       angle: Math.random() * 360,
-      distance: Math.random() * 150,
+      distance: Math.random() * 200,
     }));
 
     setSparks((prev) => [...prev, ...sparksArray]);
