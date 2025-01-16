@@ -1,11 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import ProgressBar from "../../UI/ProgressBar";
 import Container from "../../Container";
 import { testimonials } from "@/constants/testimonials";
-import css from "./Testimonials.module.css";
 import LinkButton from "@/components/UI/LinkButton";
+import css from "./Testimonials.module.css";
 
 const Testimonials = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -23,7 +24,17 @@ const Testimonials = () => {
             {testimonials.map((testimonial, index) => (
               <div className={css.embla__slide} key={index}>
                 <div>
-                  <p className={css.testimonialName}>{testimonial.name}:</p>
+                  <div className={css.testimonialHeader}>
+                    <Image
+                      className={css.testimonialPhoto}
+                      src={testimonial.photo}
+                      alt={testimonial.name}
+                      width="100"
+                      height="100"
+                    />
+                    <p className={css.testimonialName}>{testimonial.name}</p>
+                  
+                  </div>
                   <p className={css.testimonialText}>
                     {Array.isArray(testimonial.text) ? (
                       testimonial.text.map((line, index) => (
