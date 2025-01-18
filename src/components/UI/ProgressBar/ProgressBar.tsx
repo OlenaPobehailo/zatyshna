@@ -9,7 +9,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
   initialLevel,
   currentLevel,
 }) => {
-  const levels = ["0", "А0", "A1", "A2", "B1", "B2", "C1"];
+  const levels = ["0", "A1", "A2", "B1", "B2", "C1"];
   // const visibleLevels = [initialLevel, currentLevel, levels.length - 1];
 
   const getProgressPercentage = (initial: number, current: number) => {

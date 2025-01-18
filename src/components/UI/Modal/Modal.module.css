@@ -1,0 +1,105 @@
+/* .modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+
+.modalContent {
+  position: relative;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow-y: auto;
+  max-height: calc(100vh - 10px);
+
+  @media screen and (min-width: 375px) {
+    width: 350px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 440px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    padding: 30px;
+  }
+
+  @media screen and (min-width: 960px) {
+    width: 800px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1000px;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  transition: transform 0.3s ease;
+
+  & svg {
+    width: 12px;
+    height: 12px;
+
+    @media screen and (min-width: 768px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+} */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modalContent {
+  font-size: 1rem;
+  line-height: 1.5;
+}

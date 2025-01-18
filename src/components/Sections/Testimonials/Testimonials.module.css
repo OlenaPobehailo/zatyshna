@@ -5,7 +5,7 @@
 
 .embla__container {
   display: flex;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
@@ -21,24 +21,29 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1.5rem;
   min-width: 280px;
   margin-right: 20px;
   padding: 1rem 0.8rem 2rem;
 
   background: white;
   border-radius: 140px 140px 10px 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
-  /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 
   @media screen and (min-width: 480px) {
     min-width: 300px;
   }
 
   @media screen and (min-width: 768px) {
-    min-width: 400px;
-    margin-right: 32px;
+    min-width: calc((100% - 40px) / 3);
     border-radius: 200px 200px 10px 10px;
+  }
+
+  @media screen and (min-width: 960px) {
+    width: calc(30% - 2rem);
+    margin-right: 28px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -46,6 +51,11 @@
   }
 }
 
+.embla__slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: #f9f9f9;
+}
 .testimonialHeader {
   margin-bottom: 0.5rem;
   text-align: center;
@@ -64,13 +74,14 @@
   }
 }
 
-.testimonialText {
-  margin-bottom: 1rem;
-  font-size: 0.7rem;
+.testimonialTextWrapper {
+  display: block;
+}
 
-  @media screen and (min-width: 480px) {
-    font-size: 0.8rem;
-  }
+.testimonialText {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
 
   @media screen and (min-width: 768px) {
     font-size: 0.9rem;
@@ -78,13 +89,27 @@
 
   @media screen and (min-width: 1440px) {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.6rem;
   }
 }
 
-.testimonialText span {
-  display: block;
-  margin-bottom: 0.2rem;
+.testimonialText p {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: inline-block;
+}
+
+.testimonialText p:nth-child(2),
+.testimonialText p:nth-child(3) {
+  display: inline;
+}
+
+.ellipsis {
+  display: inline;
+  margin-left: 1px;
 }
 
 .testimonialName {
@@ -92,10 +117,14 @@
   margin-bottom: 10px;
 }
 
+.delimiter {
+  display: block;
+}
+
 .prevButton,
 .nextButton {
   position: absolute;
-  top: 5%;
+  top: 6%;
   transform: translateY(-50%);
 
   padding: 10px 12px 12px;
@@ -109,18 +138,20 @@
   line-height: 0.5;
   cursor: pointer;
 
+  transition: all 0.3s ease-in-out;
+
   @media screen and (min-width: 480px) {
     padding: 12px 16px 18px;
     font-size: 1.5rem;
   }
 
   @media screen and (min-width: 768px) {
-    padding: 14px 18px 20px;
+    padding: 12px 18px 20px;
     font-size: 1.8rem;
   }
 
   @media screen and (min-width: 1440px) {
-    padding: 16px 20px 24px;
+    padding: 12px 22px 22px;
     font-size: 2rem;
   }
 }
@@ -133,15 +164,15 @@
   }
 
   @media screen and (min-width: 768px) {
-    left: 100px;
-  }
-
-  @media screen and (min-width: 960px) {
     left: 200px;
   }
 
+  @media screen and (min-width: 960px) {
+    left: 255px;
+  }
+
   @media screen and (min-width: 1200px) {
-    left: 300px;
+    left: 325px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -157,15 +188,15 @@
   }
 
   @media screen and (min-width: 768px) {
-    right: 100px;
-  }
-
-  @media screen and (min-width: 960px) {
     right: 200px;
   }
 
+  @media screen and (min-width: 960px) {
+    right: 255px;
+  }
+
   @media screen and (min-width: 1200px) {
-    right: 300px;
+    right: 325px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -175,5 +206,36 @@
 
 .prevButton:hover,
 .nextButton:hover {
-  color: var(--text-color);
+  color: var(--pink-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--main-bg);
+  border: 3px solid var(--pink-color);
+}
+.prevButton:active,
+.nextButton:active {
+  outline: 2px solid var(--pink-color);
+  outline-offset: 3px;
+}
+
+.readMoreButton {
+  display: inline-block;
+  padding: 0;
+
+  background: none;
+  color: var(--pink-color);
+  border: none;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.readMoreButton:hover {
+  color: var(--mint-color);
+  transform: scale(1.1);
+}
+
+.modalParagraph {
+  margin-bottom: 1rem;
 }

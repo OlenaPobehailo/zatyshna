@@ -7,6 +7,10 @@ import Container from "../../Container";
 import { testimonials } from "@/constants/testimonials";
 import LinkButton from "@/components/UI/LinkButton";
 import css from "./Testimonials.module.css";
+import { Fragment, useState } from "react";
+import Modal from "@/components/UI/Modal";
+
+const MAX_LENGTH = 150;
 
 const Testimonials = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -15,6 +19,22 @@ const Testimonials = () => {
 
   const nextSlide = () => emblaApi?.scrollNext();
   const prevSlide = () => emblaApi?.scrollPrev();
+
+  const [isModalOpen, setModalOpen] = useState<boolean>(false);
+  const [fullText, setFullText] = useState<string>("");
+
+  const openModal = (text: string) => {
+    setFullText(text);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => setModalOpen(false);
+
+  const splitText = (text: string) => {
+    return text
+      .split("\n")
+      .map((line, index) => <Fragment key={index}>{line}</Fragment>);
+  };
 
   return (
     <section className={`section ${css.testimonials}`}>
@@ -33,20 +53,28 @@ const Testimonials = () => {
                       height="100"
                     />
                     <p className={css.testimonialName}>{testimonial.name}</p>
-                  
                   </div>
-                  <p className={css.testimonialText}>
-                    {Array.isArray(testimonial.text) ? (
-                      testimonial.text.map((line, index) => (
-                        <span key={index}>
-                          {line}
-                          <br />
-                        </span>
-                      ))
-                    ) : (
-                      <span>{testimonial.text}</span>
+
+                  <div className={css.testimonialTextWrapper}>
+                    <div className={css.testimonialText}>
+                      {testimonial.text.length > MAX_LENGTH ? (
+                        <>
+                          {splitText(testimonial.text.slice(0, MAX_LENGTH))}
+                          <span className={css.ellipsis}>...</span>
+                        </>
+                      ) : (
+                        splitText(testimonial.text)
+                      )}
+                    </div>
+                    {testimonial.text.length > MAX_LENGTH && (
+                      <button
+                        className={css.readMoreButton}
+                        onClick={() => openModal(testimonial.text)}
+                      >
+                        Читати далі
+                      </button>
                     )}
-                  </p>
+                  </div>
                 </div>
                 <ProgressBar
                   initialLevel={testimonial.initialLevel || 0}
@@ -71,6 +99,18 @@ const Testimonials = () => {
           Записатись на заняття
         </LinkButton>
       </Container>
+
+      {isModalOpen && (
+        <Modal onClose={closeModal}>
+          <div className={css.modalContent}>
+            {splitText(fullText).map((line, index) => (
+              <p key={index} className={css.modalParagraph}>
+                {line}
+              </p>
+            ))}
+          </div>
+        </Modal>
+      )}
     </section>
   );
 };
