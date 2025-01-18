@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+
 import ProgressBar from "../../UI/ProgressBar";
 import Container from "../../Container";
 import { testimonials } from "@/constants/testimonials";
@@ -84,11 +86,14 @@ const Testimonials = () => {
             ))}
           </div>
           <button className={css.prevButton} onClick={prevSlide}>
-            &#8592;
+            {/* &#8592; */}
+            <FaArrowLeft />
           </button>
           <button className={css.nextButton} onClick={nextSlide}>
-            &#8594;
+            {/* &#8594; */}
+            <FaArrowRight />
           </button>
+          {/* fa FaArrowLeft FaArrowRight */}
         </div>
         <LinkButton
           name="primary"

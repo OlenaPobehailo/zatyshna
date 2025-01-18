@@ -30,33 +30,40 @@
   @media (min-width: 480px) {
     text-align-last: left;
   }
-}
 
-.contactList {
-  list-style: none;
+  @media (min-width: 1200px) {
+    margin-bottom: 1rem;
+  }
 }
 
 .contactItem {
+  display: flex;
+  justify-content: start;
+  align-self: center;
+  gap: 0.5rem;
+
   font-size: 1.2rem;
   margin: 0 0 1rem;
 
   color: var(--dark-color);
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  gap: 1rem;
 }
 
-.contactItem a {
+.contactItem {
   transition: all 0.3s ease;
 }
 
-.contactItem a:hover {
-  transform: scale(1.05);
+.contactItem:hover {
+  transform: scale(1.02);
   text-decoration: underline;
   text-underline-offset: 3px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--blue-color);
 }
 
 .icon {
   font-size: 1.5rem;
+  color: var(--blue-color);
 }
 
 @media (min-width: 768px) {
@@ -67,7 +74,6 @@
 
   .contactItem {
     font-size: 1.4rem;
-    gap: 1rem;
   }
 
   .icon {
@@ -91,7 +97,6 @@
 
   .contactItem {
     font-size: 1.5rem;
-    gap: 1.2rem;
   }
 
   .icon {

@@ -1,3 +1,4 @@
+import { RiTelegramLine } from "react-icons/ri";
 import Container from "../Container";
 import css from "./Contacts.module.css";
 
@@ -9,7 +10,9 @@ const Contacts = () => {
           <h1 className={css.contactTitle}>Контакти</h1>
           <ul className={css.contactList}>
             <li className={css.contactItem}>
-              <span className={css.icon}></span>
+              <span className={css.icon}>
+                <RiTelegramLine />
+              </span>
               <a
                 href="https://t.me/zatyshna_support"
                 target="_blank"
@@ -20,7 +23,9 @@ const Contacts = () => {
               </a>
             </li>
             <li className={css.contactItem}>
-              <span className={css.icon}></span>
+              <span className={css.icon}>
+                <RiTelegramLine />
+              </span>
               <a
                 href="https://t.me/zatyszna"
                 target="_blank"
@@ -31,7 +36,9 @@ const Contacts = () => {
               </a>
             </li>
             <li className={css.contactItem}>
-              <span className={css.icon}></span>
+              <span className={css.icon}>
+                <RiTelegramLine />
+              </span>
               <a
                 href="https://t.me/sashkaenglish"
                 target="_blank"
