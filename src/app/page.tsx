@@ -5,11 +5,6 @@ import Lessons from "@/components/Sections/Lessons";
 import styles from "./page.module.css";
 import Testimonials from "@/components/Sections/Testimonials";
 
-export const metadata = {
-  title: "Zatyshna",
-  description: "Zatyshna",
-};
-
 export default function HomePage() {
   return (
     <div className={styles.page}>

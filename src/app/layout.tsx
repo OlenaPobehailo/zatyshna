@@ -5,8 +5,9 @@ import "./globals.css";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "Онлайн-школа англійської мови Затишна",
+  description:
+    "Онлайн-школа англійської мови Затишна —  вивчення англійської. Дистанційне навчання дорослих. Групові та індивідуальні заняття.",
 };
 
 export default function RootLayout({

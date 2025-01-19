@@ -38,7 +38,7 @@
 
 .contactItem {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-self: center;
   gap: 0.5rem;
 
