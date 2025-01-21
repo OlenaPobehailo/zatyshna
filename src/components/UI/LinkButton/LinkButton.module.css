@@ -50,6 +50,7 @@
 
 .button.primary {
   background-color: var(--pink-color);
+  border: 3px solid var(--pink-color);
   color: var(--main-bg);
 }
 
