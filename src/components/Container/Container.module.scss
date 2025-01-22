@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+
+.container {
+  width: var(--breakpoint-mobile);
+  margin: 0 auto;
+  padding: 0 8px;
+
+  @media screen and (min-width: $breakpoint-mobile-large) {
+    width: var;
+    padding: 0 12px;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: var(--breakpoint-tablet);
+    padding: 0 24px;
+  }
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    width: var(--breakpoint-laptop);
+    padding: 0 36px;
+  }
+
+  @media screen and (min-width: $breakpoint-laptop-large) {
+    width: var(--breakpoint-laptop-large);
+    padding: 0 48px;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: var(--breakpoint-desktop);
+    padding: 0 64px;
+  }
+}
+
+.containerWithoutPadding {
+  min-width: var(--breakpoint-mobile);
+  width: 100%;
+  margin: 0 auto;
+
+  /* @media screen and (min-width: $breakpoint-mobile-large) {
+    width: var(--breakpoint-mobile-large);
+  }
+
+  @media  screen and (min-width: $breakpoint-tablet) {
+    width: var(--breakpoint-tablet);
+  }
+
+  @media screen and (min-width: var(--breakpoint-laptop)) {
+    width: var(--breakpoint-laptop);
+  }
+
+  @media screen and (min-width: $breakpoint-laptop-large) {
+    width: var(--breakpoint-laptop-large);
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: var(--breakpoint-desktop);
+  } */
+}

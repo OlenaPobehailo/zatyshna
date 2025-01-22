@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useResponsiveImageMapAreas } from "@/hooks/useResponsiveImageMapAreas";
-import css from "./Hero.module.css";
+import css from "./Hero.module.scss";
 
 type Spark = {
   x: number;

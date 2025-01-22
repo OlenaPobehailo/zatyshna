@@ -1,4 +1,4 @@
-import css from "./ProgressBar.module.css";
+import css from "./ProgressBar.module.scss";
 
 interface ProgressBarProps {
   initialLevel: number;

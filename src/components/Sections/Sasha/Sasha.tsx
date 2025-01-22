@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/UI/Icon";
-import css from "./Sasha.module.css";
 import Container from "@/components/Container";
+import css from "./Sasha.module.scss";
 
 const Sasha = () => {
   return (

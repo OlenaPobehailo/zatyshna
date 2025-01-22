@@ -1,5 +1,5 @@
 import Testimonials from "@/components/Sections/Testimonials/Testimonials";
-import styles from "../page.module.css";
+import css from "../page.module.scss";
 
 export const metadata = {
   title: "Затишна | Відгуки студентів",
@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function TestimonialsPage() {
   return (
-    <div className={styles.page}>
+    <div className={css.page}>
       <Testimonials />
     </div>
   );

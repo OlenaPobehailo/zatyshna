@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .lessons {
 }
 
@@ -12,7 +14,7 @@
   padding: 1rem;
   width: 100%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -21,7 +23,7 @@
     margin: 0 auto 3rem;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     margin-bottom: 4rem;
   }
 }
@@ -35,22 +37,22 @@
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $breakpoint-mobile-large) {
     width: 400px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     width: calc(50% - 2rem);
     min-height: 350px;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     width: calc(33.333% - 2rem);
     min-height: 410px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $breakpoint-desktop) {
   .lessonItem:nth-child(1) {
     order: 1;
   }
@@ -79,10 +81,10 @@
 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
   }
 }
 
@@ -93,15 +95,15 @@
   margin-bottom: 0.5rem;
   /* line-height: 1; */
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $breakpoint-mobile-large) {
     font-size: 1.5rem;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     font-size: 1.8rem;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     font-size: 2rem;
   }
 }
@@ -109,11 +111,11 @@
 .lessonTitle span {
   font-size: 0.8rem;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     font-size: 1rem;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     font-size: 1.2rem;
   }
 }
@@ -122,11 +124,11 @@
   font-size: 1rem;
   margin-bottom: 1rem;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     /* font-size: 1.2rem; */
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     /* font-size: 1.4rem; */
   }
 }
@@ -136,11 +138,11 @@
   margin-bottom: 1rem;
   font-weight: 700;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     font-size: 1.4rem;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     font-size: 1.6rem;
   }
 }
@@ -150,11 +152,11 @@
   margin: 0;
   text-align: left;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     padding: 1.5rem;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
   }
 }
 
@@ -165,11 +167,11 @@
 
   font-size: 1rem;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     font-size: 1.1rem;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     font-size: 1.3rem;
   }
 }

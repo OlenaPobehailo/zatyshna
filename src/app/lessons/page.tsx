@@ -1,8 +1,8 @@
-import styles from "../page.module.css";
+import css from "../page.module.scss";
 
 export default function LessonsPage() {
   return (
-    <div className={styles.page}>
+    <div className={css.page}>
       <h1>Уроки</h1>
     </div>
   );

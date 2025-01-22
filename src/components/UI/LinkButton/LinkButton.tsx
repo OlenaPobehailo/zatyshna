@@ -1,4 +1,4 @@
-import css from "./LinkButton.module.css";
+import css from "./LinkButton.module.scss";
 
 interface LinkButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode;

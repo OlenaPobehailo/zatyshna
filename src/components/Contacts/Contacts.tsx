@@ -1,6 +1,6 @@
 import { RiTelegramLine } from "react-icons/ri";
 import Container from "../Container";
-import css from "./Contacts.module.css";
+import css from "./Contacts.module.scss";
 
 const Contacts = () => {
   return (

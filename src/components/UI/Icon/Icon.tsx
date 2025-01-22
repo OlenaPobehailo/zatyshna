@@ -1,4 +1,4 @@
-import css from "./Icon.module.css";
+import css from "./Icon.module.scss";
 
 type Props = {
   className: string;

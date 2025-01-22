@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .header {
   position: fixed;
   top: 0;
@@ -25,11 +27,11 @@
   transition: all 0.3s ease;
   z-index: 5;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     font-size: 2.5rem;
   }
 
-  @media (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     font-size: 3rem;
   }
 
@@ -51,7 +53,8 @@
   opacity: 0;
   transition: all 0.3s ease;
 
-  @media screen and (min-width: 768.1px) {
+  @media screen and (min-width: $breakpoint-tablet) {
+    //768.1
     position: static;
 
     display: flex;
@@ -67,7 +70,7 @@
     font-size: 1.2rem;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $breakpoint-laptop-large) {
     gap: 2.5rem;
     font-size: 1.2rem;
   }
@@ -80,7 +83,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
-/* @media (min-width: 768px) {
+/* @media screen and  (min-width: $breakpoint-tablet) {
   .navList {
     display: flex;
     position: static;
@@ -98,11 +101,11 @@
   display: inline-block;
   transition: color 0.3s ease, transform 0.3s ease;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     font-size: 1.2rem;
   }
 
-  @media (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     font-size: 1.5rem;
   }
 }
@@ -111,7 +114,6 @@
   transform: scale(1.05);
   text-decoration: underline;
   text-underline-offset: 3px;
-
 }
 
 .dropdownMenu {
@@ -132,7 +134,7 @@
   display: block;
   max-height: 10rem;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
   }
 }
@@ -141,7 +143,7 @@
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: $breakpoint-tablet) {
   .navList {
     display: flex;
     flex-direction: column;

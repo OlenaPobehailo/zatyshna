@@ -1,9 +1,9 @@
-import styles from "../page.module.css";
+import css from "../page.module.scss";
 
 export default function ResourcesPage() {
   return (
-    <div className={styles.page}>
-        <h1 className={styles.title}>Ресурси</h1>
+    <div className={css.page}>
+        <h1 className={css.title}>Ресурси</h1>
     </div>
   );
 }

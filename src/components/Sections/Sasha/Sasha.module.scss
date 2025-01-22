@@ -1,9 +1,11 @@
+@import "../../../styles/variables.scss";
+
 .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -19,7 +21,7 @@
   width: 280px;
   margin: 0 auto 1rem;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     margin: 0 auto;
     /* width: 50%; */
     height: 50%;
@@ -27,7 +29,7 @@
     order: 2;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     /* height: calc(100vh - 128px);
     width: auto;
     margin: 0 auto; */
@@ -45,7 +47,7 @@
 .infoWrapper {
   margin-bottom: 0.6rem;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     flex-basis: 60%;
     order: 3;
   }
@@ -58,7 +60,7 @@
 
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     /* margin-bottom: 1.5rem; */
     text-align-last: left;
     font-size: 3rem;
@@ -70,17 +72,17 @@
 
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     text-align: left;
     font-size: 1.2rem;
     margin-bottom: 1.2rem;
   }
 
-  /* @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: $breakpoint-tablet) {
     margin-bottom: 1.5rem;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     margin-bottom: 2.5rem;
   } */
 }
@@ -104,12 +106,12 @@
 
   font-weight: 500;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     font-size: 1.1rem;
     padding: 0.8rem 0 0.8rem;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     font-size: 1.3rem;
     padding: 1.2rem 0 1.2rem;
   }
@@ -138,17 +140,17 @@
   flex-shrink: 0;
   padding: 5px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     width: 36px;
     height: 36px;
   }
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: $breakpoint-laptop) {
     width: 48px;
     height: 48px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $breakpoint-laptop-large) {
     width: 64px;
     height: 64px;
 
@@ -176,11 +178,11 @@
   color: var(--pink-color);
   font-size: 1.2rem;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-tablet) {
     font-size: 1.5rem;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $breakpoint-desktop) {
     font-size: 2rem;
   }
 } */

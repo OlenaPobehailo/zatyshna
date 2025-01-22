@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import "./globals.css";
-import styles from "./page.module.css";
+import "../styles/globals.scss";
+import styles from "./page.module.scss";
 
 export const metadata: Metadata = {
   title: "Онлайн-школа англійської мови Затишна",
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="uk">
       <body>
         <Header />
         <main className={styles.main}>{children}</main>

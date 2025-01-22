@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Fragment, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
@@ -8,9 +9,8 @@ import ProgressBar from "../../UI/ProgressBar";
 import Container from "../../Container";
 import { testimonials } from "@/constants/testimonials";
 import LinkButton from "@/components/UI/LinkButton";
-import css from "./Testimonials.module.css";
-import { Fragment, useState } from "react";
 import Modal from "@/components/UI/Modal";
+import css from "./Testimonials.module.scss";
 
 const MAX_LENGTH = 150;
 

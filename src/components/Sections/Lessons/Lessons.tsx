@@ -1,6 +1,6 @@
 import LinkButton from "@/components/UI/LinkButton";
 import Container from "../../Container";
-import css from "./Lessons.module.css";
+import css from "./Lessons.module.scss";
 
 const Lessons = () => {
   return (

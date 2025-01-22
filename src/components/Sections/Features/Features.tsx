@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import Icon from "../../UI/Icon";
 import LinkButton from "@/components/UI/LinkButton";
-import css from "./Features.module.css";
+import css from "./Features.module.scss";
 
 const Features = () => {
   return (

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Burger from "./Burger";
 import Logo from "../Logo";
-import css from "./Header.module.css";
+import css from "./Header.module.scss";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

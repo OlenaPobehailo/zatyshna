@@ -1,4 +1,4 @@
-import css from './Burger.module.css'
+import css from './Burger.module.scss'
 
 interface BurgerProps {
   isOpen: boolean
