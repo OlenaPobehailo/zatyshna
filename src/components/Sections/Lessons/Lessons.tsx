@@ -5,6 +5,8 @@ import css from "./Lessons.module.scss";
 const Lessons = () => {
   return (
     <section className={`section ${css.lesson}`}>
+      <h2 className={css.titleHidden}>Індивідуальні та групові заняття в Онлайн-школі англійської мови Затишна</h2>
+
       <Container>
         <ul className={css.lessonList}>
           <li className={css.lessonItem}>

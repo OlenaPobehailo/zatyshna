@@ -85,6 +85,7 @@ const Hero = () => {
 
   return (
     <section className={css.hero}>
+      <h2 className={css.titleHidden}>Онлайн-школа англійської мови Затишна</h2>
       <div className={css.imageWrapper}>
         <Image
           src="/assets/images/Castle-towers.jpg"

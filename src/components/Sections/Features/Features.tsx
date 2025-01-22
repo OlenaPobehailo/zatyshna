@@ -6,6 +6,10 @@ import css from "./Features.module.scss";
 const Features = () => {
   return (
     <section className={`section light ${css.features}`}>
+      <h2 className={css.titleHidden}>
+        Особливості онлайн-школи англійської мови Затишна
+      </h2>
+
       <Container>
         <ul className={css.featuresList}>
           <li>

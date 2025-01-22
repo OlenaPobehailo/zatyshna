@@ -40,6 +40,10 @@ const Testimonials = () => {
 
   return (
     <section className={`section ${css.testimonials}`}>
+      <h2 className={css.titleHidden}>
+        Відгуки про Онлайн-школу англійської мови Затишна
+      </h2>
+
       <Container>
         <div className={css.embla} ref={emblaRef}>
           <div className={css.embla__container}>

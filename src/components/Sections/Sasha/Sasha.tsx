@@ -21,8 +21,7 @@ const Sasha = () => {
           <div className={css.infoWrapper}>
             <p className={css.greeting}>Олександра</p>
             <h2>
-              засновниця школи
-              {/* <span>Затишна</span> */}
+              засновниця школи <span>Затишна</span>
             </h2>
 
             <ul className={css.description}>
