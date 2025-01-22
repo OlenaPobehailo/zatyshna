@@ -90,7 +90,10 @@ const Hero = () => {
         <Image
           src="/assets/images/Castle-towers.jpg"
           alt="Замок"
-          fill
+          width={1440}
+          height={670}
+          layout="responsive"
+          // fill
           useMap="#image-map"
           ref={imgRef}
           className={css.responsiveImage}
