@@ -23,16 +23,17 @@
 
   @media screen and (min-width: $breakpoint-tablet) {
     margin: 0 auto;
-    /* width: 50%; */
-    height: 50%;
     width: auto;
     order: 2;
   }
 
+  @media screen and (min-width: $breakpoint-laptop) {
+    width: 35%;
+  }
+
   @media screen and (min-width: $breakpoint-desktop) {
-    /* height: calc(100vh - 128px);
-    width: auto;
-    margin: 0 auto; */
+    width: 30%;
+    margin: 0 auto;
   }
 }
 

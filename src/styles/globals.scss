@@ -114,20 +114,20 @@ img {
   flex-direction: column;
   gap: 16px;
 
-  @media screen and (min-width: var(--breakpoint-tablet)) {
+  @media screen and (min-width: $breakpoint-tablet) {
     display: block;
     padding: 64px 0;
     min-height: calc(90vh);
   }
 
-  @media screen and (min-width: var(--breakpoint-desktop)) {
+  @media screen and (min-width: $breakpoint-desktop) {
     padding: 96px 0;
   }
 
   /* outline: 1px solid green; */
 }
 
-.section-hidden-heading  {
+.section-hidden-heading {
   position: absolute;
   white-space: nowrap;
   width: 1px;

@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .container {
-  width: var(--breakpoint-mobile);
+  width: $breakpoint-mobile;
   margin: 0 auto;
   padding: 0 8px;
 
@@ -11,48 +11,48 @@
   }
 
   @media screen and (min-width: $breakpoint-tablet) {
-    width: var(--breakpoint-tablet);
+    width: $breakpoint-tablet;
     padding: 0 24px;
   }
 
   @media screen and (min-width: $breakpoint-laptop) {
-    width: var(--breakpoint-laptop);
+    width: $breakpoint-laptop;
     padding: 0 36px;
   }
 
   @media screen and (min-width: $breakpoint-laptop-large) {
-    width: var(--breakpoint-laptop-large);
+    width: $breakpoint-laptop-large;
     padding: 0 48px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    width: var(--breakpoint-desktop);
+    width: $breakpoint-desktop;
     padding: 0 64px;
   }
 }
 
 .containerWithoutPadding {
-  min-width: var(--breakpoint-mobile);
+  min-width: $breakpoint-mobile;
   width: 100%;
   margin: 0 auto;
 
   /* @media screen and (min-width: $breakpoint-mobile-large) {
-    width: var(--breakpoint-mobile-large);
+    width: $breakpoint-mobile-large;
   }
 
   @media  screen and (min-width: $breakpoint-tablet) {
-    width: var(--breakpoint-tablet);
+    width: $breakpoint-tablet;
   }
 
-  @media screen and (min-width: var(--breakpoint-laptop)) {
-    width: var(--breakpoint-laptop);
+  @media screen and (min-width: $breakpoint-laptop) {
+    width: $breakpoint-laptop;
   }
 
   @media screen and (min-width: $breakpoint-laptop-large) {
-    width: var(--breakpoint-laptop-large);
+    width: $breakpoint-laptop-large;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    width: var(--breakpoint-desktop);
+    width: $breakpoint-desktop;
   } */
 }

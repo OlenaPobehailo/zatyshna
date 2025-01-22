@@ -13,8 +13,8 @@ const Sasha = () => {
             <Image
               className={css.photo}
               src="/assets/images/main-photo.jpg"
-              width="600"
-              height="800"
+              width="959"
+              height="1280"
               alt=""
             />
           </div>
