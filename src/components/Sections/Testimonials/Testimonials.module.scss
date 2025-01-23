@@ -1,5 +1,8 @@
 @import "../../../styles/variables.scss";
 
+.testimonials {
+}
+
 .titleHidden {
   position: absolute;
   white-space: nowrap;
@@ -13,33 +16,55 @@
   margin: -1px;
 }
 
-.embla {
+.swiperWrapper {
   position: relative;
-  overflow: hidden;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.embla__container {
-  display: flex;
-  padding: 20px 20px 20px 0;
-  margin: 0 auto;
-
-  @media screen and (min-width: $breakpoint-tablet) {
-    margin: 0 auto 2rem;
-  }
-
-  @media screen and (min-width: $breakpoint-desktop) {
-    margin: 0 auto 3rem;
-  }
+.customSwiper {
+  --swiper-theme-color: var(--pink-color);
+  padding: 0 0.2rem 0 0.2rem;
 }
 
-.embla__slide {
+.customSwiper :global(.swiper-pagination-bullet) {
+  background-color: var(--swiper-theme-color);
+}
+
+.customSwiper :global(.swiper-pagination-bullet-active) {
+  background-color: var(--swiper-theme-color);
+}
+
+.customSwiper :global(.swiper-slide) {
+  margin-top: 10px;
+}
+
+.customSwiper :global(.swiper-pagination) {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.customSwiper :global(.swiper-pagination-bullet) {
+  background-color: var(--pink-color);
+}
+
+.customSwiper :global(.swiper-pagination-bullet-active) {
+  background-color: var(--pink-color);
+}
+
+.slide {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1.5rem;
   min-width: 280px;
-  margin-right: 20px;
   padding: 1rem 0.8rem 2rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 
   background: white;
   border-radius: 140px 140px 10px 10px;
@@ -48,29 +73,32 @@
   transition: all 0.3s ease-in-out;
 
   @media screen and (min-width: $breakpoint-mobile-large) {
-    min-width: 300px;
+    margin: 0 auto 2rem;
+    width: 80%;
+    border-radius: 175px 175px 10px 10px;
   }
 
   @media screen and (min-width: $breakpoint-tablet) {
-    min-width: calc((100% - 40px) / 3);
-    border-radius: 200px 200px 10px 10px;
+    width: 95%;
   }
 
   @media screen and (min-width: $breakpoint-laptop) {
-    width: calc(30% - 2rem);
-    margin-right: 28px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  @media screen and (min-width: $breakpoint-desktop) {
-    min-width: 400px;
+  @media screen and (min-width: $breakpoint-laptop-large) {
+    width: 100%;
   }
 }
 
-.embla__slide:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+.slide:hover {
+  transform: scale(1.005);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   background: #f9f9f9;
 }
+
 .testimonialHeader {
   margin-bottom: 0.5rem;
   text-align: center;
@@ -95,15 +123,10 @@
 
 .testimonialText {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
 
-  @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 0.9rem;
-  }
-
   @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 1rem;
     margin-bottom: 0.6rem;
   }
 }
@@ -136,102 +159,6 @@
   display: block;
 }
 
-.prevButton,
-.nextButton {
-  position: absolute;
-  top: 8%;
-  transform: translateY(-50%);
-
-  padding: 8px 16px;
-  border-radius: 50%;
-
-  background-color: var(--pink-color);
-  color: white;
-  border: none;
-
-  font-size: 1rem;
-  line-height: 0.5;
-  cursor: pointer;
-
-  transition: all 0.3s ease-in-out;
-
-  @media screen and (min-width: $breakpoint-mobile-large) {
-    padding: 8px 16px;
-    font-size: 1.2rem;
-  }
-
-  @media screen and (min-width: $breakpoint-tablet) {
-    padding: 8px 16px;
-    font-size: 1.2rem;
-  }
-
-  @media screen and (min-width: $breakpoint-laptop-large) {
-    padding: 10px 24px;
-    font-size: 1.5rem;
-  }
-}
-
-.prevButton {
-  left: 10px;
-
-  @media screen and (min-width: $breakpoint-mobile-large) {
-    left: 45px;
-  }
-
-  @media screen and (min-width: $breakpoint-tablet) {
-    left: 210px;
-  }
-
-  @media screen and (min-width: $breakpoint-laptop) {
-    left: 265px;
-  }
-
-  @media screen and (min-width: $breakpoint-laptop-large) {
-    left: 325px;
-  }
-
-  @media screen and (min-width: $breakpoint-desktop) {
-    left: 400px;
-  }
-}
-
-.nextButton {
-  right: 10px;
-
-  @media screen and (min-width: $breakpoint-mobile-large) {
-    right: 45px;
-  }
-
-  @media screen and (min-width: $breakpoint-tablet) {
-    right: 210px;
-  }
-
-  @media screen and (min-width: $breakpoint-laptop) {
-    right: 265px;
-  }
-
-  @media screen and (min-width: $breakpoint-laptop-large) {
-    right: 325px;
-  }
-
-  @media screen and (min-width: $breakpoint-desktop) {
-    right: 400px;
-  }
-}
-
-.prevButton:hover,
-.nextButton:hover {
-  color: var(--pink-color);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  background-color: var(--main-bg);
-  border: 3px solid var(--pink-color);
-}
-.prevButton:active,
-.nextButton:active {
-  outline: 2px solid var(--pink-color);
-  outline-offset: 3px;
-}
-
 .readMoreButton {
   display: inline-block;
   padding: 0;
@@ -241,9 +168,19 @@
   border: none;
   text-decoration: underline;
   font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
   cursor: pointer;
 
   transition: all 0.3s ease-in-out;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 1.1rem;
+  }
 }
 
 .readMoreButton:hover {
