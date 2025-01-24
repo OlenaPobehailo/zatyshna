@@ -18,28 +18,6 @@
   align-items: center;
 }
 
-.logo {
-  font-family: "SeaweedScript";
-  font-weight: 400;
-  font-style: italic;
-  font-size: 2rem;
-  color: var(--pink-color);
-  transition: all 0.3s ease;
-  z-index: 5;
-
-  @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 2.5rem;
-  }
-
-  @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 3rem;
-  }
-
-  &:hover {
-    transform: scale(1.05);
-  }
-}
-
 .navList {
   display: none;
   flex-direction: column;
@@ -53,7 +31,7 @@
   opacity: 0;
   transition: all 0.3s ease;
 
-  @media screen and (min-width: 768.1) {
+  @media screen and (min-width: 768.1px) {
     //768.1
     position: static;
 
