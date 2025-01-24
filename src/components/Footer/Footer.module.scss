@@ -1,0 +1,133 @@
+.footer {
+  background-color: var(--brown-color);
+  color: var(--text-color-light);
+  padding: 40px 20px;
+  text-align: center;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (min-width: 960px) {
+      grid-template-columns: repeat(2, 1fr);
+      text-align: left;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .logoSection {
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--pink-color);
+    }
+
+    .description {
+      //   margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
+
+  .contactSection {
+    text-align: center;
+
+    @media (min-width: 960px) {
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .contactList {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        font-size: 14px;
+        line-height: 1.8;
+
+        @media (min-width: 960px) {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .linksSection {
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .linksList {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 14px;
+        line-height: 1.8;
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .socialSection {
+    h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .socialIcons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+
+      transition: all 0.3s ease;
+
+      a {
+        font-size: 24px;
+        color: var(--text-color-light);
+
+        &:hover {
+          color: var(--pink-color);
+        }
+      }
+    }
+  }
+
+  .copy {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+}

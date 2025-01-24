@@ -6,6 +6,7 @@
   --main-bg: #fdf8ee;
 
   --text-color: #733c30;
+  --text-color-light: #fdf8ee;
   --card-bg: #f4ead6;
 
   --pink-color: #d97e9f;
@@ -117,7 +118,7 @@ img {
   @media screen and (min-width: $breakpoint-tablet) {
     display: block;
     padding: 64px 0;
-    min-height: calc(90vh);
+    min-height: calc(85vh);
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
