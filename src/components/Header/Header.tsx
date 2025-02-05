@@ -47,8 +47,8 @@ const Header = () => {
             </Link>
           </li>
           <li className={css.navItem}>
-            <Link href="/resources" className={css.navLink} onClick={closeMenu}>
-              Ресурси
+            <Link href="/products" className={css.navLink} onClick={closeMenu}>
+              Продукти
             </Link>
           </li>
           <li className={css.navItem}>

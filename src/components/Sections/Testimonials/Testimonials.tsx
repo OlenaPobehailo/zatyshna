@@ -33,7 +33,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className={`section ${css.testimonials}`}>
+    <section className={`section ${css.testimonials} ${css.accent}`}>
       <h2 className={css.titleHidden}>
         Відгуки про Онлайн-школу англійської мови Затишна
       </h2>

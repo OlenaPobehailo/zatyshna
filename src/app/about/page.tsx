@@ -1,9 +1,9 @@
 import About from "@/components/About";
-import css from "../page.module.scss";
+import styles from "../page.module.scss";
 
 export default function AboutPage() {
   return (
-    <div className={css.page}>
+    <div className={styles.page}>
       <About />
     </div>
   );

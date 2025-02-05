@@ -16,6 +16,7 @@
   --beige-color: #d9bca3;
   --blue-color: #6f9abf;
   --light-color: #f9f9f9;
+  --white-color: #ffffff;
 
   --breakpoint-mobile: 320px;
   --breakpoint-mobile-large: 480px;
@@ -117,12 +118,12 @@ img {
 
   @media screen and (min-width: $breakpoint-tablet) {
     display: block;
-    padding: 64px 0;
+    // padding: 32px 0;
     min-height: calc(85vh);
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    padding: 96px 0;
+    // padding: 64px 0;
   }
 
   /* outline: 1px solid green; */
@@ -146,7 +147,11 @@ img {
 }
 
 .section:nth-child(odd) {
-  background-color: white;
+  background-color: var(--white-color);
+}
+
+.section.accent {
+  background-color: var(--main-bg);
 }
 
 .notFound {
@@ -204,4 +209,17 @@ img {
 
 .text:last-of-type {
   margin-bottom: 30px;
+}
+
+.titleHidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }

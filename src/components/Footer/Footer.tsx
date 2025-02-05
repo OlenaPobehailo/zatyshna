@@ -46,12 +46,12 @@ const Footer = () => {
             </li> */}
             <li>
               <a
-                href=""
+                href="https://t.me/zatyshna_support"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.link}
               >
-                 Команда турботи
+                Команда турботи
               </a>
             </li>
           </ul>
