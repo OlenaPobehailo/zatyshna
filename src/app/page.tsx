@@ -3,11 +3,11 @@ import Sasha from "@/components/Sections/Sasha";
 import Features from "@/components/Sections/Features";
 import Lessons from "@/components/Sections/Lessons";
 import Testimonials from "@/components/Sections/Testimonials";
-import css from "./page.module.scss";
+import styles from "./page.module.scss";
 
 export default function HomePage() {
   return (
-    <div className={css.page}>
+    <div className={styles.homePage}>
       <Hero />
       <Sasha />
       <Features />

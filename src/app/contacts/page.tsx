@@ -1,5 +1,5 @@
 import Contacts from "@/components/Contacts";
-import css from "../page.module.scss";
+import styles from "../page.module.scss";
 
 export const metadata = {
   title: "Затишна | Контакти",
@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className={css.page}>
+    <div className={styles.homePage}>
       <Contacts />
     </div>
   );

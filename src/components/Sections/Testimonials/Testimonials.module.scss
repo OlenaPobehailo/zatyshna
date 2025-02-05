@@ -1,7 +1,9 @@
 @import "../../../styles/variables.scss";
 
-.testimonials {
+.testimonials.accent {
+  background-color: var(--main-bg);
 }
+
 
 .titleHidden {
   position: absolute;
@@ -68,7 +70,7 @@
 
   background: white;
   border-radius: 140px 140px 10px 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
   transition: all 0.3s ease-in-out;
 

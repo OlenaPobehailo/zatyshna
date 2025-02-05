@@ -45,7 +45,7 @@ const Hero = () => {
     },
     {
       coords: "1150,450,1550,250",
-      href: "/resources",
+      href: "/products",
       title: "Вежа скарбів",
       alt: "Вежа скарбів",
       shape: "rect" as const,

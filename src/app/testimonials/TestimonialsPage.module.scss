@@ -1,0 +1,47 @@
+.introCard {
+  width: 100%;
+  color: var(--text-color);
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .content {
+    max-width: 900px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .introCard {
+  }
+  .title {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+.testimonialsWrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+  background-color: var(--main-bg);
+
+  @media (max-width: 768px) {
+    padding: 64px 0;
+  }
+}
