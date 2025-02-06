@@ -38,6 +38,10 @@ const Products = () => {
           >
             Замовити
           </LinkButton>
+
+          <LinkButton name="secondary" href="/lessons">
+            Дізнатись більше
+          </LinkButton>
         </div>
       </div>
 
@@ -62,6 +66,9 @@ const Products = () => {
           >
             Приєднатись
           </LinkButton>
+          <LinkButton name="secondary" href="/lessons">
+            Дізнатись більше
+          </LinkButton>
         </div>
       </div>
 
@@ -82,6 +89,9 @@ const Products = () => {
             rel="noopener noreferrer"
           >
             Пробне заняття
+          </LinkButton>
+          <LinkButton name="secondary" href="/lessons">
+            Дізнатись більше
           </LinkButton>
         </div>
       </div>

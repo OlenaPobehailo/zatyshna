@@ -1,5 +1,7 @@
 import Container from "@/components/Container";
 import LinkButton from "@/components/UI/LinkButton";
+import css from "./NotFound.module.scss";
+
 const page = () => {
   return (
     <div className="notFound">
@@ -10,18 +12,17 @@ const page = () => {
         </p>
 
         <p className="text">Але не хвилюйтеся, ми допоможемо знайти шлях! </p>
-        <div className="buttons">
+        <div className={css.buttonWrapper}>
           <LinkButton
             name="primary"
             href="https://t.me/zatyshna_support"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ marginBottom: "1rem" }}
           >
             Вежа турботи
           </LinkButton>
 
-          <LinkButton name="primary" href="/#info">
+          <LinkButton name="secondary" href="/#info">
             Головна вежа
           </LinkButton>
         </div>

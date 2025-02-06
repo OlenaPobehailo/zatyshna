@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -14,12 +16,11 @@
 
 .card {
   margin-bottom: 36px;
-  padding: 20px;
+  padding: 24px;
   border-radius: 12px;
   background-color: var(--white-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: left;
-
 }
 
 .card h3 {
@@ -28,18 +29,18 @@
 }
 
 .card p {
-  margin-bottom: 8px;
+  margin-bottom: 24px;
   font-size: 16px;
 }
 
 .buttonWrapper {
-  margin-top: 20px;
-  
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 
-.button {
- 
-}
-
-.button:hover {
+  @media screen and (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+  }
 }

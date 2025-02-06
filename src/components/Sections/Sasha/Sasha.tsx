@@ -9,6 +9,24 @@ const Sasha = () => {
     <section className={`section ${css.sasha}`} id="info">
       <Container>
         <div className={css.info}>
+          <ul className={css.description}>
+            <li>
+              <Icon
+                name="icon-question"
+                className={`${css.icon} ${css.question}`}
+              />
+              Набридли нудні підручники та вчителі, які засуджують за помилки?
+            </li>
+            <li>
+              <Icon name="icon-check" className={`${css.icon} ${css.check}`} />
+              Хочеш заговорити та мати твердий С1?
+            </li>
+            <li>
+              <Icon name="icon-arrow" className={`${css.icon} ${css.arrow}`} />
+              Тоді тобі до&nbsp;<Link href="/about">Zatyshna!</Link>
+            </li>
+          </ul>
+
           <div className={css.photoWrapper}>
             <Image
               className={css.photo}
@@ -18,13 +36,15 @@ const Sasha = () => {
               alt=""
             />
           </div>
-          <div className={css.infoWrapper}>
-            <p className={css.greeting}>Олександра</p>
-            <h2>
-              засновниця школи <span>Zatyshna</span>
-            </h2>
 
-            <ul className={css.description}>
+          <div className={css.infoWrapper}>
+            <div className={css.textBlock}>
+              <p className={css.greeting}>Олександра</p>
+              <h2>
+                засновниця школи <span>Zatyshna</span>
+              </h2>
+            </div>
+            <ul className={css.descriptionDesktop}>
               <li>
                 <Icon
                   name="icon-question"

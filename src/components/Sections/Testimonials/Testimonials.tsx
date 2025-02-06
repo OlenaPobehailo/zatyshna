@@ -50,7 +50,6 @@ const Testimonials = () => {
               960: { slidesPerView: 3, spaceBetween: 8 },
               1200: { slidesPerView: 3, spaceBetween: 30 },
               1440: { slidesPerView: 3, spaceBetween: 30 },
-
             }}
             loop={true}
             className={css.customSwiper}
@@ -100,15 +99,20 @@ const Testimonials = () => {
             ))}
           </Swiper>
         </div>
+        <div className={css.buttonWrapper}>
+          <LinkButton
+            name="primary"
+            href="https://t.me/zatyshna_support"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Записатись на заняття
+          </LinkButton>
 
-        <LinkButton
-          name="primary"
-          href="https://t.me/zatyshna_support"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Записатись на заняття
-        </LinkButton>
+          <LinkButton name="secondary" href="/lessons">
+            Дізнатись більше
+          </LinkButton>
+        </div>
       </Container>
 
       {isModalOpen && (
