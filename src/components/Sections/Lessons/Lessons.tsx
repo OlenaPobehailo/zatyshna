@@ -5,7 +5,9 @@ import css from "./Lessons.module.scss";
 const Lessons = () => {
   return (
     <section className={`section ${css.lesson}`}>
-      <h2 className={css.titleHidden}>Індивідуальні та групові заняття в Онлайн-школі англійської мови Затишна</h2>
+      <h2 className={css.titleHidden}>
+        Індивідуальні та групові заняття в Онлайн-школі англійської мови Затишна
+      </h2>
 
       <Container>
         <ul className={css.lessonList}>
@@ -59,15 +61,20 @@ const Lessons = () => {
             </ul>
           </li>
         </ul>
+        <div className={css.buttonWrapper}>
+          <LinkButton
+            name="primary"
+            href="https://t.me/zatyshna_support"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Записатись на заняття
+          </LinkButton>
 
-        <LinkButton
-          name="primary"
-          href="https://t.me/zatyshna_support"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Записатись на заняття
-        </LinkButton>
+          <LinkButton name="secondary" href="/products">
+            Дізнатись більше
+          </LinkButton>
+        </div>
       </Container>
     </section>
   );

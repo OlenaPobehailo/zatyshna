@@ -6,11 +6,18 @@
   justify-content: center;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     gap: 40px;
+  }
+}
+
+.description {
+  display: block;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: none;
   }
 }
 
@@ -22,18 +29,12 @@
   margin: 0 auto 1rem;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    margin: 0 auto;
-    width: auto;
-    order: 2;
-  }
-
-  @media screen and (min-width: $breakpoint-laptop) {
     width: 35%;
+    margin: 0;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
     width: 30%;
-    margin: 0 auto;
   }
 }
 
@@ -46,11 +47,31 @@
 }
 
 .infoWrapper {
-  margin-bottom: 0.6rem;
+  order: 1;
 
   @media screen and (min-width: $breakpoint-tablet) {
     flex-basis: 60%;
-    order: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.textBlock {
+  text-align: center;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    text-align: left;
+  }
+}
+
+.descriptionDesktop {
+  display: none;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: block;
   }
 }
 
@@ -69,22 +90,14 @@
 }
 
 .infoWrapper h2 {
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
   text-align: center;
 
   @media screen and (min-width: $breakpoint-tablet) {
     text-align: left;
     font-size: 1.2rem;
-    margin-bottom: 1.2rem;
+    // margin-bottom: 1.2rem;
   }
-
-  /* @media screen and (min-width: $breakpoint-tablet) {
-    margin-bottom: 1.5rem;
-  }
-
-  @media screen and (min-width: $breakpoint-desktop) {
-    margin-bottom: 2.5rem;
-  } */
 }
 
 .infoWrapper h2 span {
@@ -93,9 +106,11 @@
 }
 
 .description {
+  margin-bottom: 32px;
 }
 
-.description li {
+.description li,
+.descriptionDesktop li {
   /* margin-bottom: 0.5rem; */
   display: flex;
   justify-content: flex-start;
@@ -170,19 +185,3 @@
     }
   }
 }
-
-/* .description li::before {
-  content: "\2714";
-
-  padding-right: 0.5rem;
-  color: var(--pink-color);
-  font-size: 1.2rem;
-
-  @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 1.5rem;
-  }
-
-  @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 2rem;
-  }
-} */

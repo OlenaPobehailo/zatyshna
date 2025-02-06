@@ -81,6 +81,10 @@ const About = () => {
               >
                 Записатись на заняття
               </LinkButton>
+
+              <LinkButton name="secondary" href="/lessons">
+                Дізнатись більше
+              </LinkButton>
             </div>
           </div>
         </div>

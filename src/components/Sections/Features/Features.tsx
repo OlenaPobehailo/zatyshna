@@ -44,14 +44,20 @@ const Features = () => {
         Команда турботи
         </Link> */}
 
-        <LinkButton
-          name="primary"
-          href="https://t.me/zatyshna_support"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Команда турботи
-        </LinkButton>
+        <div className={css.buttonWrapper}>
+          <LinkButton
+            name="primary"
+            href="https://t.me/zatyshna_support"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Команда турботи
+          </LinkButton>
+
+          <LinkButton name="secondary" href="/lessons">
+            Дізнатись більше
+          </LinkButton>
+        </div>
       </Container>
     </section>
   );
