@@ -1,6 +1,6 @@
 import Container from "@/components/Container";
 import LinkButton from "@/components/UI/LinkButton";
-import css from "./NotFound.module.scss";
+import css from "./notFound.module.scss";
 
 const page = () => {
   return (
