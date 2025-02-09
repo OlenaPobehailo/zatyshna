@@ -3,16 +3,28 @@ import Sasha from "@/components/Sections/Sasha";
 import Features from "@/components/Sections/Features";
 import Lessons from "@/components/Sections/Lessons";
 import Testimonials from "@/components/Sections/Testimonials";
-import styles from "./page.module.scss";
+import css from "./page.module.scss";
 
 export default function HomePage() {
   return (
-    <div className={styles.homePage}>
+    <div className={css.homePage}>
       <Hero />
-      <Sasha />
-      <Features />
-      <Testimonials />
-      <Lessons />
+
+      <section className={`section ${css.sasha}`} id="info">
+        <Sasha />
+      </section>
+
+      <section className={`section light ${css.features}`}>
+        <Features />
+      </section>
+
+      <section className={`section ${css.testimonials} ${css.accent}`}>
+        <Testimonials />
+      </section>
+
+      <section className={`section ${css.lesson}`}>
+        <Lessons />
+      </section>
     </div>
   );
 }

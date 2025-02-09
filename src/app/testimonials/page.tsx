@@ -1,7 +1,6 @@
 import Testimonials from "@/components/Sections/Testimonials/Testimonials";
 import Container from "@/components/Container";
-import styles from "../page.module.scss";
-import css from "./TestimonialsPage.module.scss";
+import css from "../page.module.scss";
 
 export const metadata = {
   title: "Затишна | Відгуки студентів",
@@ -19,25 +18,26 @@ export const metadata = {
 
 export default function TestimonialsPage() {
   return (
-    <div className={styles.page}>
+    <div className={css.page}>
       <Container>
-        <h1 className="titleHidden">Відгуки студентів</h1>
-        <div className={css.introCard}>
-          <div className={css.content}>
-            <h2 className={css.title}>
+        <section className={css.intro}>
+          <h1 className="titleHidden">Відгуки студентів</h1>
+          <div className={css.introCard}>
+            <h2 className={css.pageTitle}>
               Хочете знати, що кажуть ті, хто вже навчається у нас?
             </h2>
-            <p className={css.text}>
-              Коли ти відчуваєш підтримку, навчання стає легким і приємним. Наші
-              студенти діляться своїми історіями – подивіться, як їм вдається
-              досягати успіху разом із нами!
+            <p className={css.pageSubtitle}>
+              Коли ти відчуваєш підтримку, навчання стає легким і приємним.{" "}
+            </p>
+
+            <p className={css.pageSubtitle}>
+              Наші студенти діляться своїми історіями – подивіться, як їм
+              вдається досягати успіху разом із нами!
             </p>
           </div>
-        </div>
-      </Container>
-      <div className={css.testimonialsWrapper}>
+        </section>
         <Testimonials />
-      </div>
+      </Container>
     </div>
   );
 }

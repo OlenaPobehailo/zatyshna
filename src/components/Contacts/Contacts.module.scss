@@ -15,13 +15,14 @@
 
 .contactWrapper {
   width: 100%;
-  max-width: 500px;
+  // max-width: 500px;
   padding: 2rem 1rem;
   margin: 0 auto;
+  text-align: center;
 }
 
 .contactTitle {
-  margin-bottom: 0.5rem;
+  margin-bottom: 2.5rem;
 
   font-size: 1.8rem;
   font-weight: 700;
@@ -29,54 +30,72 @@
   color: var(--pink-color);
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 
-  @media screen and (min-width: $breakpoint-mobile-large) {
-    text-align-last: left;
-  }
+  // @media screen and (min-width: $breakpoint-mobile-large) {
+  //   text-align-last: left;
+  // }
 
   @media screen and (min-width: $breakpoint-laptop-large) {
     margin-bottom: 1rem;
   }
 }
 
-.contactItem {
+.contactList {
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-self: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  @media screen and (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.contactItem {
   font-size: 1.2rem;
-  margin: 0 0 1rem;
+  margin: 0 0 2.5rem;
 
   color: var(--dark-color);
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.contactItem {
   transition: all 0.3s ease;
 }
 
-.contactItem:hover {
-  transform: scale(1.02);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 3px;
-  text-decoration-color: var(--blue-color);
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 280px;
+  min-height: 100px;
+  padding: 0.5rem 1rem;
+
+  background-color: var(--pink-color);
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon {
+  margin-right: 0.5rem;
   font-size: 1.5rem;
-  color: var(--blue-color);
+  color: var(--white-color);
+  margin-top: 8px;
+  transition: all 0.3s ease;
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
-  .title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .contactItem {
-    font-size: 1.4rem;
-  }
+  
 
   .icon {
     font-size: 1.8rem;
@@ -88,20 +107,39 @@
     padding: 2rem;
   }
 
-  .container {
-    max-width: 600px;
-    margin: auto;
-  }
-
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .contactItem {
-    font-size: 1.5rem;
-  }
+  // .contactItem {
+  //   font-size: 1.5rem;
+  // }
 
   .icon {
     font-size: 2rem;
   }
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.image {
+  width: 85%;
+  height: auto;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+
+  margin-bottom: -30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover + .image,
+.buttonWrapper:hover .image {
+  transform: translateY(-30px);
+}
+
+.link:hover,
+.link:hover .icon {
+  color: var(--brown-color);
 }

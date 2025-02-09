@@ -77,5 +77,22 @@
   }
 }
 
-.button.disabled {
+.button.large {
+  padding: 1rem 1.5rem;
+  min-width: 300px;
+  min-height: 500px;
+  font-size: 1.3rem;
+  border-radius: 12px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), -2px -2px 10px rgba(255, 255, 255, 0.8);
+  }
 }

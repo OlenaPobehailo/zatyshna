@@ -5,7 +5,7 @@ import css from "./Features.module.scss";
 
 const Features = () => {
   return (
-    <section className={`section light ${css.features}`}>
+    <div className={css.features}>
       <h2 className={css.titleHidden}>
         Особливості онлайн-школи англійської мови Затишна
       </h2>
@@ -59,7 +59,7 @@ const Features = () => {
           </LinkButton>
         </div>
       </Container>
-    </section>
+    </div>
   );
 };
 
