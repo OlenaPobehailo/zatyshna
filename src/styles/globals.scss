@@ -116,8 +116,7 @@ img {
 
   @media screen and (min-width: $breakpoint-tablet) {
     display: block;
-    padding: 48px 0;
-    // min-height: calc(75vh);
+    padding: 64px 0;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {

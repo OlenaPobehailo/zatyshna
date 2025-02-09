@@ -8,12 +8,6 @@
   text-align: center;
 }
 
-.title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
 .card {
   margin-bottom: 36px;
   padding: 24px;
@@ -21,16 +15,29 @@
   background-color: var(--white-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: left;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .card h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 16px;
-  font-size: 22px;
+  font-size: 1rem;
+  color: var(--pink-color);
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 1.5rem;
+  }
 }
 
 .card p {
-  margin-bottom: 24px;
-  font-size: 16px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 1.2rem;
+  }
 }
 
 .buttonWrapper {
@@ -43,4 +50,27 @@
   @media screen and (min-width: $breakpoint-tablet) {
     flex-direction: row;
   }
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  color: var(--pink-color);
+  transition: transform 0.3s ease, color 0.3s ease;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-right: 1rem;
+    font-size: 2.5rem;
+  }
+}
+
+.card:hover .icon {
+  transform: scale(1.5);
 }

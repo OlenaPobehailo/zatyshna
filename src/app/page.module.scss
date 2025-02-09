@@ -8,14 +8,33 @@
   background-color: var(--main-bg);
 }
 
+.intro {
+  margin-bottom: 40px;
+  padding: 0 20px;
+  border-radius: 12px;
+}
+
+.pageTitle {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pageSubtitle {
+  display: flex;
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  color: var(--accent-color);
+}
+
 .homePage {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: calc(100vh - 95px);
   background-color: var(--white-color);
 }
-
-
 
 .main {
   padding: 44px 0 0;
@@ -34,4 +53,15 @@
 
 .footer {
   margin: 0;
+}
+
+.icon {
+  vertical-align: text-bottom;
+  font-size: 2rem;
+  color: var(--pink-color);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card:hover .icon {
+  transform: scale(1.5);
 }

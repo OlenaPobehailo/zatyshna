@@ -33,12 +33,12 @@ const Testimonials = () => {
   };
 
   return (
-    <section className={`section ${css.testimonials} ${css.accent}`}>
-      <h2 className={css.titleHidden}>
-        Відгуки про Онлайн-школу англійської мови Затишна
-      </h2>
-
+    // <section className={`section ${css.testimonials} ${css.accent}`}>
+    <>
       <Container>
+        <h2 className={css.titleHidden}>
+          Відгуки про Онлайн-школу англійської мови Затишна
+        </h2>
         <div className={css.swiperWrapper}>
           <Swiper
             modules={[Pagination]}
@@ -126,7 +126,8 @@ const Testimonials = () => {
           </div>
         </Modal>
       )}
-    </section>
+      {/* // </section> */}
+    </>
   );
 };
 

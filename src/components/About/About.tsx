@@ -7,12 +7,7 @@ const About = () => {
     <Container>
       <section className={css.about}>
         <div className={css.container}>
-          <h1 className={css.title}>
-            Zatyshna – твій затишний простір для вивчення англійської
-          </h1>
-          <p className={css.subtitle}>
-            Вивчай англійську з любов’ю та комфортом
-          </p>
+         
 
           <ul className={css.features}>
             <li className={css.feature}>
