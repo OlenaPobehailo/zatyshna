@@ -36,8 +36,8 @@ export default function TestimonialsPage() {
             </p>
           </div>
         </section>
-        <Testimonials />
       </Container>
+      <Testimonials />
     </div>
   );
 }

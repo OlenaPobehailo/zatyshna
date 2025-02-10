@@ -9,12 +9,13 @@ export default function ProductsPage() {
       <Container>
         <section className={css.intro}>
           <h2 className={css.pageTitle}>Англійська у вільний час?</h2>
-          <p className={css.pageSubtitle}>
-            Обирай своє <Icon icon="fluent:edit-settings-24-regular" className={css.icon}/>
+          <p className={`${css.pageSubtitleCenter} ${css.pageSubtitle}`}>
+            Обирай своє
+            <Icon icon="fluent:edit-settings-24-regular" className={css.icon} />
           </p>
         </section>
-        <Products />;
       </Container>
+      <Products />;
     </div>
   );
 }

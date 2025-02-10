@@ -21,8 +21,8 @@ export default function LessonsPage() {
             Олександрою. Обирайте своє!
           </p>
         </section>
-        <Lessons />
       </Container>
+      <Lessons />
     </div>
   );
 }

@@ -29,6 +29,11 @@
   color: var(--accent-color);
 }
 
+.pageSubtitleCenter {
+  display: block;
+  text-align: center;
+}
+
 .homePage {
   display: grid;
   grid-template-rows: auto 1fr auto;

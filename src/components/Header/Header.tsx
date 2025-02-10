@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header className={css.header}>
       <nav className={css.nav}>
-        <Link href="/" className={css.logo}>
+        <Link href="/" className={css.logo} onClick={closeMenu}>
           <Logo />
         </Link>
 

@@ -24,10 +24,9 @@
   position: absolute;
   top: 100%;
   right: 0;
-  width: 100%;
   background-color: var(--header-bg);
   padding: 1rem;
-  transform: translateY(-100%);
+  transform: translateX(100%);
   opacity: 0;
   transition: all 0.3s ease;
 
@@ -56,26 +55,22 @@
 
 .navList.open {
   display: flex;
-  transform: translateY(0);
+  width: 60%;
+  height: 100vh;
+  transform: translateX(0);
   opacity: 1;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+
+  @media screen and (min-width: $breakpoint-mobile-large) {
+    width: 50%;
+  }
 }
 
-/* @media screen and  (min-width: $breakpoint-tablet) {
-  .navList {
-    display: flex;
-    position: static;
-    transform: translateY(0);
-    opacity: 1;
-    flex-direction: row;
-    gap: 2rem;
-  }
-} */
-
 .navLink {
+  margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--pink-color);
+  color: var(--text-color-light);
   display: inline-block;
   transition: color 0.3s ease, transform 0.3s ease;
 
@@ -94,29 +89,6 @@
   text-underline-offset: 3px;
 }
 
-.dropdownMenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: var(--header-bg);
-  padding: 0.5rem 1rem;
-  list-style: none;
-  max-height: 0;
-  overflow: hidden;
-  width: 100%;
-  transition: max-height 1s ease;
-}
-
-.dropdownMenu.open {
-  display: block;
-  max-height: 10rem;
-
-  @media screen and (min-width: $breakpoint-tablet) {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
-  }
-}
-
 .navItem {
   position: relative;
 }
@@ -126,15 +98,5 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-  }
-
-  .dropdownMenu {
-    position: static;
-    max-height: 0;
-    overflow: hidden;
-  }
-
-  .dropdownMenu.open {
-    max-height: 10rem;
   }
 }

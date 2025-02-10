@@ -5,8 +5,12 @@
   text-align: center;
 
   .container {
-    max-width: 900px;
+    max-width: 90%;
     margin: 0 auto;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      max-width: 80%;
+    }
   }
 
   .features {

@@ -33,7 +33,6 @@ const Testimonials = () => {
   };
 
   return (
-    // <section className={`section ${css.testimonials} ${css.accent}`}>
     <>
       <Container>
         <h2 className={css.titleHidden}>
@@ -126,7 +125,6 @@ const Testimonials = () => {
           </div>
         </Modal>
       )}
-      {/* // </section> */}
     </>
   );
 };

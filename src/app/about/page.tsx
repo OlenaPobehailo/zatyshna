@@ -10,12 +10,12 @@ export default function AboutPage() {
           <h1 className={css.pageTitle}>
             Zatyshna – твій затишний простір для вивчення англійської
           </h1>
-          <p className={css.pageSubtitle}>
+          <p className={`${css.pageSubtitleCenter} ${css.pageSubtitle}`}>
             Вивчай англійську з любов’ю та комфортом
           </p>
         </section>
-        <About />
       </Container>
+      <About />
     </div>
   );
 }

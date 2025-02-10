@@ -7,8 +7,6 @@ const About = () => {
     <Container>
       <section className={css.about}>
         <div className={css.container}>
-         
-
           <ul className={css.features}>
             <li className={css.feature}>
               <h3>🌸&nbsp;Живі уроки без зубріння</h3>

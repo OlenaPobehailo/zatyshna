@@ -4,7 +4,6 @@ import css from "./Lessons.module.scss";
 
 const Lessons = () => {
   return (
-    // <section className={`section ${css.lesson}`}>
       <Container>
         <h2 className={css.titleHidden}>
           Індивідуальні та групові заняття в Онлайн-школі англійської мови
@@ -76,7 +75,6 @@ const Lessons = () => {
           </LinkButton>
         </div>
       </Container>
-    // </section>
   );
 };
 
