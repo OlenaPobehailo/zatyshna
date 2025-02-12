@@ -32,6 +32,8 @@
 
   @media screen and (min-width: $breakpoint-laptop) {
     // width: 100%;
+    // flex-grow: 1;
+    // flex-shrink: 0;
   }
 }
 
@@ -197,6 +199,7 @@
   }
 
   @media screen and (min-width: $breakpoint-laptop) {
+    display: flex !important;
     flex-direction: row !important;
     gap: 3rem;
     border-radius: 10px;
