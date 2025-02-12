@@ -41,7 +41,10 @@ const Testimonials = () => {
             className={css.customSwiper}
           >
             {testimonials.map((testimonial, index) => (
-              <SwiperSlide key={index} className={css.swiperSlide}>
+              <SwiperSlide
+                key={index}
+                className={`swiperSlide ${css.swiperSlide}`}
+              >
                 <div className={css.testimonialHeader}>
                   <Image
                     className={css.testimonialPhoto}

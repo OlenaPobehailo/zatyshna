@@ -219,3 +219,9 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.swiperSlide {
+  @media screen and (min-width: 1024px) {
+    flex-direction: row !important;
+  }
+}
