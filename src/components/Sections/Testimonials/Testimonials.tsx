@@ -14,7 +14,7 @@ import ContainerWithoutPadding from "@/components/Container/ContainerWithoutPadd
 import ProgressBar from "../../UI/ProgressBar";
 import { testimonials } from "@/constants/testimonials";
 import LinkButton from "@/components/UI/LinkButton";
-import css from "./Testimonials.module.scss";
+import css from "@/components/Sections/Testimonials/Testimonials.module.scss";
 
 
 const Testimonials = () => {
