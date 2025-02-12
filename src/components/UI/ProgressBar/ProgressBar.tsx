@@ -10,7 +10,6 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
   currentLevel,
 }) => {
   const levels = ["0", "A1", "A2", "B1", "B2", "C1"];
-  // const visibleLevels = [initialLevel, currentLevel, levels.length - 1];
 
   const getProgressPercentage = (initial: number, current: number) => {
     if (current <= initial) return 0;
@@ -22,28 +21,6 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
 
   return (
     <>
-      {/* <div className={css.progressContainer}>
-        <div className={css.progressBar} style={{ width: `${progress}%` }}>
-          <div className={css.progressEdge}></div>
-        </div>
-        <div className={css.levels}>
-          {levels.map((level, index) => {
-            const isVisible = visibleLevels.includes(index);
-
-            return (
-              <div
-                key={level}
-                className={`${css.level} ${isVisible ? "" : css.hiddenLevel}`}
-                style={{
-                  left: `${(index / (levels.length - 1)) * 100}%`,
-                }}
-              >
-                {isVisible ? level : ""}
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
       <div className={css.progressContainer}>
         <div className={css.progressBar} style={{ width: `${progress}%` }}>
           <div className={css.progressEdge}></div>
@@ -52,7 +29,6 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
           {levels.map((level, index) => (
             <div
               key={level}
-              // className={`${css.level} ${index <= currentLevel ? css.active : ""}`}
               className={css.level}
               style={{
                 left: `${(index / (levels.length - 1)) * 100}%`,

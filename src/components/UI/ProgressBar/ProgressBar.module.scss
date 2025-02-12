@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: 16px;
+  margin-top: 1rem;
   background-color: transparent;
   border: 2px solid var(--mint-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -56,78 +57,5 @@
   white-space: nowrap;
 }
 
-/*
-.progressContainer {
-  position: relative;
-  min-width: 200px;
-  width: 50%;
-  height: 16px;
-  margin: 10px;
-  background-color: transparent;
-  border: 2px solid var(--mint-color);
-
-  border-right: none;
-}
-
-.progressBar {
-  height: 100%;
-  background-color: var(--mint-color);
-  position: relative;
-  margin-bottom: 5px;
-}
-
-.progressEdge {
-  content: "";
-  position: absolute;
-  top: -1px;
-  right: -6px;
-  width: 0;
-  height: 0;
-  border-left: 7px solid var(--mint-color);
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-}
-
-.levels {
-  display: flex;
-  justify-content: space-between;
-
-  font-size: 0.85rem;
-}
-
-.level {
-  color: var(--mint-color);
-  font-weight: 700;
-}
-
-.level.active {
-  font-weight: bold;
-  color: var(--mint-color);
-}
-*/
-
 .progressContainer::after {
-  /* content: "";
-  position: absolute;
-  top: 0;
-  right: -8px;
-  width: 0;
-  height: 0;
-  border-left: 8px solid #e0e0e0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent; */
-
-  /* content: "";
-  position: absolute;
-  top: -4px;
-  right: -3px;
-  width: 9px;
-  height: 9px;
-  background-color: transparent;
-  transform: rotate(45deg);
-  transform-origin: bottom left;
-  border-right: 2px solid var(--mint-color);
-  border-top: 2px solid var(--mint-color);
-
-  z-index: -1; */
 }

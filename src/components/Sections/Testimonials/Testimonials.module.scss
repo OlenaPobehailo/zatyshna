@@ -17,92 +17,22 @@
   margin: -1px;
 }
 
-.swiperWrapper {
-  position: relative;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
 .customSwiper {
   --swiper-theme-color: var(--pink-color);
-  padding: 0 0.2rem 0 0.2rem;
-}
-
-.customSwiper :global(.swiper-pagination-bullet) {
-  background-color: var(--swiper-theme-color);
-}
-
-.customSwiper :global(.swiper-pagination-bullet-active) {
-  background-color: var(--swiper-theme-color);
+  padding: 0 0.1rem 0 0.1rem;
 }
 
 .customSwiper :global(.swiper-slide) {
   margin-top: 10px;
 }
 
-.customSwiper :global(.swiper-pagination) {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 100%;
+.testimonialHeader {
+  margin-bottom: 1rem;
   text-align: center;
-}
-
-.customSwiper :global(.swiper-pagination-bullet) {
-  background-color: var(--pink-color);
-}
-
-.customSwiper :global(.swiper-pagination-bullet-active) {
-  background-color: var(--pink-color);
-}
-
-.slide {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1.5rem;
-  min-width: 280px;
-  padding: 1rem 0.8rem 2rem;
-  margin-bottom: 2rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
-
-  background: white;
-  border-radius: 140px 140px 10px 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
-  transition: all 0.3s ease-in-out;
-
-  @media screen and (min-width: $breakpoint-mobile-large) {
-    margin: 0 auto 2rem;
-    width: 80%;
-    border-radius: 175px 175px 10px 10px;
-  }
-
-  @media screen and (min-width: $breakpoint-tablet) {
-    width: 95%;
-  }
 
   @media screen and (min-width: $breakpoint-laptop) {
-    margin-right: 0;
-    margin-left: 0;
-    margin-right: 0;
+    // width: 100%;
   }
-
-  @media screen and (min-width: $breakpoint-laptop-large) {
-    width: 100%;
-  }
-}
-
-.slide:hover {
-  transform: scale(1.005);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  background: #f9f9f9;
-}
-
-.testimonialHeader {
-  margin-bottom: 0.5rem;
-  text-align: center;
 }
 
 .testimonialPhoto {
@@ -118,23 +48,35 @@
   }
 }
 
+.testimonialInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: spaceBetween;
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    width: 550px;
+  }
+}
+
 .testimonialTextWrapper {
   display: block;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+
+  @media screen and (min-width: $breakpoint-mobile-large) {
+    font-size: 1rem;
+    margin-bottom: auto;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 1rem;
+  }
 }
 
 .testimonialText {
   display: inline-block;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-
-  @media screen and (min-width: $breakpoint-desktop) {
-    margin-bottom: 0.6rem;
-  }
-}
-
-.testimonialText p {
-  display: inline-block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.25;
 }
 
 .line {
@@ -201,8 +143,124 @@
   gap: 1rem;
   margin-bottom: 2rem;
 
-
   @media screen and (min-width: $breakpoint-tablet) {
     flex-direction: row;
+  }
+}
+
+.swiperWrapper {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  position: relative;
+
+  @media screen and (min-width: $breakpoint-mobile-large) {
+    width: 75%;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 600px;
+  }
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    width: 800px;
+  }
+}
+
+.customSwiper {
+  width: 100%;
+  height: auto;
+  padding: 0.2rem;
+  padding-bottom: 2.5rem;
+}
+
+.swiperSlide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1rem 0.8rem 2rem;
+  background: white;
+  border-radius: 140px 140px 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  @media screen and (min-width: $breakpoint-mobile-large) {
+    margin: 0 auto;
+    border-radius: 175px 175px 10px 10px;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 600;
+    padding: 3rem;
+    min-height: 350px;
+  }
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    flex-direction: row;
+    gap: 3rem;
+    border-radius: 10px;
+    padding: 2rem;
+  }
+}
+
+.customSwiperPrev,
+.customSwiperNext {
+  position: absolute;
+  top: 33%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: var(--pink-color);
+  cursor: pointer;
+
+  @media screen and (min-width: $breakpoint-mobile-large) {
+    top: 30%;
+  }
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    top: 40%;
+  }
+}
+
+.customSwiperPrev {
+  left: -1rem;
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    left: -4rem;
+  }
+}
+
+.customSwiperNext {
+  right: -1rem;
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    right: -4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-swiper-prev,
+  .custom-swiper-next {
+    top: 30%;
+  }
+
+  .custom-swiper-prev {
+    left: 1rem;
+  }
+
+  .custom-swiper-next {
+    right: 1rem;
+  }
+}
+
+.icon {
+  font-size: 4rem;
+
+  @media screen and (min-width: $breakpoint-mobile-large) {
+    font-size: 5rem;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 6rem;
   }
 }

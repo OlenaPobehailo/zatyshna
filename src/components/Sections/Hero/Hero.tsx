@@ -16,7 +16,6 @@ const Hero = () => {
   const originalAreas = [
     {
       coords: "650,900,1150,700",
-      // href: "/",
       href: "#info",
       title: "Головна вежа",
       alt: "Головна вежа",
@@ -92,8 +91,6 @@ const Hero = () => {
           alt="Замок"
           width={1440}
           height={670}
-          layout="responsive"
-          // fill
           useMap="#image-map"
           ref={imgRef}
           className={css.responsiveImage}

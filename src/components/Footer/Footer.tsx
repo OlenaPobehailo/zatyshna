@@ -41,9 +41,6 @@ const Footer = () => {
 
         <div className={css.contactSection}>
           <ul className={css.contactList}>
-            {/* <li>
-              <a href="mailto:info@zatyshna.com">info@zatyshna.com</a>
-            </li> */}
             <li>
               <a
                 href="https://t.me/zatyshna_support"

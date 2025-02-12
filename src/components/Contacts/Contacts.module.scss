@@ -15,7 +15,6 @@
 
 .contactWrapper {
   width: 100%;
-  // max-width: 500px;
   padding: 2rem 1rem;
   margin: 0 auto;
   text-align: center;
@@ -29,10 +28,6 @@
   text-align: center;
   color: var(--pink-color);
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-
-  // @media screen and (min-width: $breakpoint-mobile-large) {
-  //   text-align-last: left;
-  // }
 
   @media screen and (min-width: $breakpoint-laptop-large) {
     margin-bottom: 1rem;
@@ -95,8 +90,6 @@
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
-  
-
   .icon {
     font-size: 1.8rem;
   }
@@ -106,10 +99,6 @@
   .contacts {
     padding: 2rem;
   }
-
-  // .contactItem {
-  //   font-size: 1.5rem;
-  // }
 
   .icon {
     font-size: 2rem;

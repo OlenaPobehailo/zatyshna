@@ -49,7 +49,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 12px; */
 
   min-height: 100px;
   padding: 0 1rem 1rem;
@@ -125,61 +124,6 @@
     height: 36px;
   }
 }
-
-// .button {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 0.7rem;
-//   margin: 0 auto;
-//   max-width: 80%;
-
-//   font-size: 1rem;
-//   font-weight: 600;
-//   text-align: center;
-//   border-radius: 5px;
-//   background-color: var(--pink-color);
-//   color: var(--main-bg);
-//   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-
-//   cursor: pointer;
-//   transition: all 0.3s ease;
-
-//   @media screen and (min-width: $breakpoint-tablet) {
-//     max-width: 40%;
-//     margin: 0;
-//     padding: 0.8rem 1.5rem;
-//     font-size: 1.2rem;
-//     text-shadow: none;
-//   }
-
-//   @media screen and (min-width: $breakpoint-laptop-large) {
-//     max-width: 40%;
-//     padding: 1rem 2.5rem;
-//     font-size: 1.3rem;
-//   }
-
-//   @media screen and (min-width: $breakpoint-desktop) {
-//     font-size: 1.3rem;
-//     padding: 1.2rem 3rem;
-//     font-size: 1.5rem;
-//   }
-// }
-
-// .button:hover {
-//   transform: scale(1.05);
-//   background-color: var(--main-bg);
-//   color: var(--pink-color);
-//   border: 3px solid var(--pink-color);
-//   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-// }
-
-// .button:active {
-//   transform: scale(1);
-//   background-color: var(--light-color);
-//   color: var(--pink-color);
-//   border: 3px solid var(--pink-color);
-// }
 
 .buttonWrapper {
   display: flex;

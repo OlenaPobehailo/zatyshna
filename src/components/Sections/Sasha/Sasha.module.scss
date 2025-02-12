@@ -83,20 +83,17 @@
   text-align: center;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    /* margin-bottom: 1.5rem; */
     text-align-last: left;
     font-size: 3rem;
   }
 }
 
 .infoWrapper h2 {
-  // margin-bottom: 2rem;
   text-align: center;
 
   @media screen and (min-width: $breakpoint-tablet) {
     text-align: left;
     font-size: 1.2rem;
-    // margin-bottom: 1.2rem;
   }
 }
 
@@ -111,7 +108,6 @@
 
 .description li,
 .descriptionDesktop li {
-  /* margin-bottom: 0.5rem; */
   display: flex;
   justify-content: flex-start;
   align-items: center;

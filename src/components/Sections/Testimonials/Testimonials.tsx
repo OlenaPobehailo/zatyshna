@@ -1,94 +1,65 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "swiper/swiper-bundle.css";
+import { Swiper as SwiperInstance } from "swiper/types";
+import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
-import { Fragment, useState } from "react";
-// import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { Fragment, useRef } from "react";
+import ContainerWithoutPadding from "@/components/Container/ContainerWithoutPadding";
 
 import ProgressBar from "../../UI/ProgressBar";
-import Container from "../../Container";
 import { testimonials } from "@/constants/testimonials";
 import LinkButton from "@/components/UI/LinkButton";
-import Modal from "@/components/UI/Modal";
 import css from "./Testimonials.module.scss";
 
-const MAX_LENGTH = 150;
 
 const Testimonials = () => {
-  const [isModalOpen, setModalOpen] = useState<boolean>(false);
-  const [fullText, setFullText] = useState<string>("");
-
-  const openModal = (text: string) => {
-    setFullText(text);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => setModalOpen(false);
-
-  const splitText = (text: string) => {
-    return text
-      .split("\n")
-      .map((line, index) => <Fragment key={index}>{line}</Fragment>);
-  };
+  const swiperRef = useRef<SwiperInstance | null>(null);
 
   return (
     <>
-      <Container>
+      <ContainerWithoutPadding>
         <h2 className={css.titleHidden}>
           Відгуки про Онлайн-школу англійської мови Затишна
         </h2>
         <div className={css.swiperWrapper}>
           <Swiper
-            modules={[Pagination]}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            modules={[Navigation, Autoplay]}
             pagination={{ clickable: true }}
-            spaceBetween={20}
+            autoplay={{ delay: 7000, disableOnInteraction: false }}
+            spaceBetween={10}
             slidesPerView={1}
-            breakpoints={{
-              768: { slidesPerView: 2, spaceBetween: 30 },
-              960: { slidesPerView: 3, spaceBetween: 8 },
-              1200: { slidesPerView: 3, spaceBetween: 30 },
-              1440: { slidesPerView: 3, spaceBetween: 30 },
-            }}
             loop={true}
             className={css.customSwiper}
           >
             {testimonials.map((testimonial, index) => (
-              <SwiperSlide key={index}>
-                <div className={css.slide}>
-                  <div>
-                    <div className={css.testimonialHeader}>
-                      <Image
-                        className={css.testimonialPhoto}
-                        src={testimonial.photo}
-                        alt={testimonial.name}
-                        width="100"
-                        height="100"
-                      />
-                      <p className={css.testimonialName}>{testimonial.name}</p>
-                    </div>
+              <SwiperSlide key={index} className={css.swiperSlide}>
+                <div className={css.testimonialHeader}>
+                  <Image
+                    className={css.testimonialPhoto}
+                    src={testimonial.photo}
+                    alt={testimonial.name}
+                    width="100"
+                    height="100"
+                  />
+                  <p className={css.testimonialName}>{testimonial.name}</p>
+                </div>
 
-                    <div className={css.testimonialTextWrapper}>
-                      <div className={css.testimonialText}>
-                        {testimonial.text.length > MAX_LENGTH ? (
-                          <>
-                            {splitText(testimonial.text.slice(0, MAX_LENGTH))}
-                            <span className={css.ellipsis}>...</span>
-                          </>
-                        ) : (
-                          splitText(testimonial.text)
-                        )}
-                      </div>
-                      {testimonial.text.length > MAX_LENGTH && (
-                        <button
-                          className={css.readMoreButton}
-                          onClick={() => openModal(testimonial.text)}
-                        >
-                          Читати далі
-                        </button>
-                      )}
-                    </div>
+                <div className={css.testimonialInfoWrapper}>
+                  <div className={css.testimonialTextWrapper}>
+                    {testimonial.text.split("\n").map((line, index) => (
+                      <p key={index} className={css.testimonialText}>
+                        {line}
+                      </p>
+                    ))}
+                    
                   </div>
+
                   <ProgressBar
                     initialLevel={testimonial.initialLevel || 0}
                     currentLevel={testimonial.currentLevel || 0}
@@ -97,7 +68,20 @@ const Testimonials = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          <div
+            className={css.customSwiperPrev}
+            onClick={() => swiperRef.current?.slidePrev()}
+          >
+            <Icon icon="mdi:chevron-left" className={css.icon} />
+          </div>
+          <div
+            className={css.customSwiperNext}
+            onClick={() => swiperRef.current?.slideNext()}
+          >
+            <Icon icon="mdi:chevron-right" className={css.icon} />
+          </div>
         </div>
+
         <div className={css.buttonWrapper}>
           <LinkButton
             name="primary"
@@ -112,19 +96,9 @@ const Testimonials = () => {
             Дізнатись більше
           </LinkButton>
         </div>
-      </Container>
+      </ContainerWithoutPadding>
 
-      {isModalOpen && (
-        <Modal onClose={closeModal}>
-          <div className={css.modalContent}>
-            {splitText(fullText).map((line, index) => (
-              <p key={index} className={css.modalParagraph}>
-                {line}
-              </p>
-            ))}
-          </div>
-        </Modal>
-      )}
+      
     </>
   );
 };

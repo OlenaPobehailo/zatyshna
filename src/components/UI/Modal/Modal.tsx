@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useEffect } from "react";
-// import { AiOutlineClose } from "react-icons/ai";
 import css from "./Modal.module.scss";
 
 type Props = {

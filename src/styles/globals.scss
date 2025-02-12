@@ -1,7 +1,6 @@
 @import "./variables.scss";
 
 :root {
-  // --header-bg: #fdf8ee;
   --header-bg: #d97e9f;
 
   --footer-bg: #fdf8ee;
@@ -124,8 +123,6 @@ img {
   @media screen and (min-width: $breakpoint-desktop) {
     padding: 64px 0;
   }
-
-  /* outline: 1px solid green; */
 }
 
 .section-hidden-heading {

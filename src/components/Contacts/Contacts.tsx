@@ -1,5 +1,4 @@
 import { RiTelegramLine } from "react-icons/ri";
-// import Container from "../Container";
 import css from "./Contacts.module.scss";
 import LinkButton from "../UI/LinkButton";
 import Image from "next/image";

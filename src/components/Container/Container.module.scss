@@ -32,27 +32,27 @@
 }
 
 .containerWithoutPadding {
-  min-width: $breakpoint-mobile;
-  width: 100%;
+  min-width: 100%;
+  max-width: $breakpoint-mobile;
   margin: 0 auto;
 
-  /* @media screen and (min-width: $breakpoint-mobile-large) {
-    width: $breakpoint-mobile-large;
+  @media screen and (min-width: $breakpoint-mobile-large) {
+    max-width: $breakpoint-mobile-large;
   }
 
-  @media  screen and (min-width: $breakpoint-tablet) {
-    width: $breakpoint-tablet;
+  @media screen and (min-width: $breakpoint-tablet) {
+    max-width: $breakpoint-tablet;
   }
 
   @media screen and (min-width: $breakpoint-laptop) {
-    width: $breakpoint-laptop;
+    max-width: $breakpoint-laptop;
   }
 
   @media screen and (min-width: $breakpoint-laptop-large) {
-    width: $breakpoint-laptop-large;
+    max-width: $breakpoint-laptop-large;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    width: $breakpoint-desktop;
-  } */
+    max-width: $breakpoint-desktop;
+  }
 }

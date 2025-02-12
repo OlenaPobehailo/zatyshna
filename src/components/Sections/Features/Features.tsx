@@ -40,10 +40,6 @@ const Features = () => {
           </li>
         </ul>
 
-        {/* <Link href="/lessons" className={css.button}>
-        Команда турботи
-        </Link> */}
-
         <div className={css.buttonWrapper}>
           <LinkButton
             name="primary"
