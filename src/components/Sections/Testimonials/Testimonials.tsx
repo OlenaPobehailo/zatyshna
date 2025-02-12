@@ -8,7 +8,7 @@ import "swiper/swiper-bundle.css";
 import { Swiper as SwiperInstance } from "swiper/types";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
-import { Fragment, useRef } from "react";
+import { Fragment, useEffect, useRef } from "react";
 import ContainerWithoutPadding from "@/components/Container/ContainerWithoutPadding";
 
 import ProgressBar from "../../UI/ProgressBar";
@@ -16,9 +16,12 @@ import { testimonials } from "@/constants/testimonials";
 import LinkButton from "@/components/UI/LinkButton";
 import css from "@/components/Sections/Testimonials/Testimonials.module.scss";
 
-
 const Testimonials = () => {
   const swiperRef = useRef<SwiperInstance | null>(null);
+  console.log("SwiperSlide класи:", css.swiperSlide);
+  useEffect(() => {
+    console.log("SwiperSlide класи в продакшені:", css.swiperSlide);
+  }, []);
 
   return (
     <>
@@ -57,7 +60,6 @@ const Testimonials = () => {
                         {line}
                       </p>
                     ))}
-                    
                   </div>
 
                   <ProgressBar
@@ -97,8 +99,6 @@ const Testimonials = () => {
           </LinkButton>
         </div>
       </ContainerWithoutPadding>
-
-      
     </>
   );
 };
