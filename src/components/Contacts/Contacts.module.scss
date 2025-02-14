@@ -2,15 +2,9 @@
 
 .contacts {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  min-height: calc(100vh - 95px);
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.85),
-      rgba(255, 255, 255, 0.85)
-    ),
-    url("/assets/images/Castle.jpg") no-repeat center;
-  background-size: cover;
+ 
 }
 
 .contactWrapper {
@@ -20,26 +14,13 @@
   text-align: center;
 }
 
-.contactTitle {
-  margin-bottom: 2.5rem;
-
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-align: center;
-  color: var(--pink-color);
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-
-  @media screen and (min-width: $breakpoint-laptop-large) {
-    margin-bottom: 1rem;
-  }
-}
-
 .contactList {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin: 0 auto;
 
   @media screen and (min-width: $breakpoint-tablet) {
     flex-direction: row;
@@ -53,7 +34,6 @@
   font-size: 1.2rem;
   margin: 0 0 2.5rem;
 
-  color: var(--dark-color);
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
@@ -70,7 +50,6 @@
   background-color: var(--pink-color);
   color: var(--white-color);
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   z-index: 1;
 }
@@ -131,5 +110,5 @@
 
 .link:hover,
 .link:hover .icon {
-  color: var(--brown-color);
+  transform: scale(1.02);
 }

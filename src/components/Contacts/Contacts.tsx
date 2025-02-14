@@ -9,11 +9,12 @@ const Contacts = () => {
       <li className={css.contactItem}>
         <div className={css.buttonWrapper}>
           <Image
-            src="/assets/images/care-team.jpg"
+            src="/assets/images/1.gif"
             width="290"
             height="230"
             alt="Команда турботи"
             className={css.image}
+            unoptimized={true}
           />
 
           <LinkButton
@@ -34,11 +35,12 @@ const Contacts = () => {
       <li className={css.contactItem}>
         <div className={css.buttonWrapper}>
           <Image
-            src="/assets/images/pupils.jpg"
+            src="/assets/images/2.gif"
             width="700"
             height="700"
             alt="Команда турботи"
             className={css.image}
+            unoptimized={true}
           />
 
           <LinkButton
@@ -59,11 +61,13 @@ const Contacts = () => {
       <li className={css.contactItem}>
         <div className={css.buttonWrapper}>
           <Image
-            src="/assets/images/teachers.jpg"
+            src="/assets/images/3.gif"
             width="290"
             height="230"
             alt="Команда турботи"
             className={css.image}
+            style={{ maxWidth: "290px" }}
+            unoptimized={true}
           />
 
           <LinkButton
