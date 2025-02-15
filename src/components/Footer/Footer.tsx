@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className={css.socialSection}>
-          <h3>Ми в соціальних мережах</h3>
+          <p className={css.socialTitle}>Ми в соціальних мережах</p>
           <div className={css.socialIcons}>
             <a
               href="https://t.me/zatyszna"

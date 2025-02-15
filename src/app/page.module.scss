@@ -5,6 +5,8 @@
   grid-template-rows: auto 1fr auto;
   min-height: calc(100vh - 95px);
   padding-top: 48px;
+  background: rgba(255, 255, 255, 0.1) url("/assets/images/bg.png") no-repeat
+    center center/cover;
   background-color: var(--main-bg);
 }
 

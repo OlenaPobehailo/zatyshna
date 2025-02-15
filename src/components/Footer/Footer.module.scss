@@ -41,11 +41,6 @@
       text-align: left;
     }
 
-    h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
     .contactList {
       list-style: none;
       padding: 0;
@@ -74,34 +69,9 @@
     }
   }
 
-  .linksSection {
-    h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .linksList {
-      list-style: none;
-      padding: 0;
-
-      li {
-        font-size: 14px;
-        line-height: 1.8;
-
-        a {
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  }
-
   .socialSection {
-    h3 {
-      font-size: 18px;
+    .socialTitle {
+      font-size: 1rem;
       margin-bottom: 10px;
     }
 
@@ -119,6 +89,10 @@
         &:hover {
           color: var(--pink-color);
         }
+      }
+
+      @media (min-width: 960px) {
+        justify-content: flex-start;
       }
     }
   }
