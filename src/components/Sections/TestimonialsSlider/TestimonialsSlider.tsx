@@ -14,9 +14,9 @@ import ContainerWithoutPadding from "@/components/Container/ContainerWithoutPadd
 import ProgressBar from "../../UI/ProgressBar";
 import { testimonials } from "@/constants/testimonials";
 import LinkButton from "@/components/UI/LinkButton";
-import css from "@/components/Sections/Testimonials/Testimonials.module.scss";
+import css from "@/components/Sections/TestimonialsSlider/TestimonialsSlider.module.scss";
 
-const Testimonials = () => {
+const TestimonialsSlider = () => {
   const swiperRef = useRef<SwiperInstance | null>(null);
   console.log("SwiperSlide класи:", css.swiperSlide);
   useEffect(() => {
@@ -106,4 +106,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default TestimonialsSlider;

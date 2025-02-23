@@ -2,7 +2,7 @@ import Hero from "@/components/Sections/Hero";
 import Sasha from "@/components/Sections/Sasha";
 import Features from "@/components/Sections/Features";
 import Lessons from "@/components/Sections/Lessons";
-import Testimonials from "@/components/Sections/Testimonials";
+import TestimonialsSlider from "@/components/Sections/TestimonialsSlider";
 import css from "./page.module.scss";
 
 export default function HomePage() {
@@ -19,7 +19,7 @@ export default function HomePage() {
       </section>
 
       <section className={`section ${css.testimonials} ${css.accent}`}>
-        <Testimonials />
+        <TestimonialsSlider />
       </section>
 
       <section className={`section ${css.lesson}`}>

@@ -1,4 +1,4 @@
-import Testimonials from "@/components/Sections/Testimonials/Testimonials";
+import Testimonials from "@/components/Testimonials";
 import Container from "@/components/Container";
 import css from "../page.module.scss";
 
@@ -36,8 +36,8 @@ export default function TestimonialsPage() {
             </p>
           </div>
         </section>
+        <Testimonials />
       </Container>
-      <Testimonials />
     </div>
   );
 }
