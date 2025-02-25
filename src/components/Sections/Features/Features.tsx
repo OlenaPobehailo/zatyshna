@@ -10,7 +10,7 @@ const Features = () => {
         Особливості онлайн-школи англійської мови Затишна
       </h2>
 
-      <Container>
+      <Container backgroundColor="var(--white-color)">
         <ul className={css.featuresList}>
           <li>
             <Icon name="icon-heart" className={css.icon} />

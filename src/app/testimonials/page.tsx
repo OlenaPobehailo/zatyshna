@@ -1,6 +1,7 @@
 import Testimonials from "@/components/Testimonials";
 import Container from "@/components/Container";
 import css from "../page.module.scss";
+import LinkButton from "@/components/UI/LinkButton";
 
 export const metadata = {
   title: "Затишна | Відгуки студентів",
@@ -37,6 +38,21 @@ export default function TestimonialsPage() {
           </div>
         </section>
         <Testimonials />
+
+        <div className={css.buttonWrapper}>
+          <LinkButton
+            name="primary"
+            href="https://t.me/zatyshna_support"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Записатись на заняття
+          </LinkButton>
+
+          <LinkButton name="secondary" href="/products">
+            Дізнатись більше
+          </LinkButton>
+        </div>
       </Container>
     </div>
   );

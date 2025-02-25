@@ -25,6 +25,8 @@
   padding: 1rem;
   width: 100%;
 
+  background: transparent !important;
+
   @media screen and (min-width: $breakpoint-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -44,7 +46,7 @@
   background-color: #fff;
   border: 2px solid var(--pink-color);
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -78,7 +80,15 @@
 }
 
 .lessonItem:hover {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  transform-origin: center;
+  z-index: 2;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    transform-origin: center;
+  }
 }
 
 .lessonHeader {
@@ -90,13 +100,11 @@
   padding: 0.3rem;
   margin-bottom: 12px;
 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-  @media screen and (min-width: $breakpoint-tablet) {
-  }
+  @media screen and (min-width: $breakpoint-tablet) {}
 
-  @media screen and (min-width: $breakpoint-desktop) {
-  }
+  @media screen and (min-width: $breakpoint-desktop) {}
 }
 
 .lessonTitle {
@@ -136,11 +144,9 @@
   font-size: 1rem;
   margin-bottom: 1rem;
 
-  @media screen and (min-width: $breakpoint-tablet) {
-  }
+  @media screen and (min-width: $breakpoint-tablet) {}
 
-  @media screen and (min-width: $breakpoint-desktop) {
-  }
+  @media screen and (min-width: $breakpoint-desktop) {}
 }
 
 .lessonPrice {
@@ -166,8 +172,7 @@
     padding: 1.5rem;
   }
 
-  @media screen and (min-width: $breakpoint-desktop) {
-  }
+  @media screen and (min-width: $breakpoint-desktop) {}
 }
 
 .lessonFeatures li {

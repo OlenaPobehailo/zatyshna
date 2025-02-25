@@ -1,5 +1,4 @@
 import Container from "../Container";
-import LinkButton from "../UI/LinkButton";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import css from "./About.module.scss";
 
@@ -116,20 +115,6 @@ const About = () => {
               життя.
             </p>
             <p>Записуйся на пробне заняття та почни свій шлях вже зараз!</p>
-            <div className={css.buttonWrapper}>
-              <LinkButton
-                name="primary"
-                href="https://t.me/zatyshna_support"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Записатись на заняття
-              </LinkButton>
-
-              <LinkButton name="secondary" href="/lessons">
-                Дізнатись більше
-              </LinkButton>
-            </div>
           </div>
         </div>
       </section>

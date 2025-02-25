@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import css from "../page.module.scss";
 import Container from "@/components/Container";
+import LinkButton from "@/components/UI/LinkButton";
 
 export default function AboutPage() {
   return (
@@ -16,6 +17,22 @@ export default function AboutPage() {
         </section>
       </Container>
       <About />
+      <Container>
+        <div className={css.buttonWrapper}>
+          <LinkButton
+            name="primary"
+            href="https://t.me/zatyshna_support"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Записатись на заняття
+          </LinkButton>
+
+          <LinkButton name="secondary" href="/products">
+            Дізнатись більше
+          </LinkButton>
+        </div>
+      </Container>
     </div>
   );
 }

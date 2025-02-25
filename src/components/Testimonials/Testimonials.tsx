@@ -18,7 +18,7 @@ const Testimonials = () => {
   }
 
   return (
-    <div>
+    <div className={css.testimonials}>
       <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 900: 2, 1200: 3 }}>
         <Masonry columnsCount={3} gutter="16px" className={css.masonryGrid}>
           {testimonials.map((testimonial, index) => (

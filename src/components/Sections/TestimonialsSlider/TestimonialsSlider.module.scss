@@ -174,7 +174,7 @@
 .customSwiper {
   width: 100%;
   height: auto;
-  padding: 0.2rem;
+  padding: 0.8rem;
   padding-bottom: 2.5rem;
 }
 
@@ -188,7 +188,7 @@
   background: var(--white-color);
   border-radius: 140px 140px 10px 10px;
   border: 2px solid var(--pink-color);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
   @media screen and (min-width: $breakpoint-mobile-large) {
     margin: 0 auto;

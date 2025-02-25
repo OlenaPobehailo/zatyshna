@@ -9,7 +9,7 @@ import { Swiper as SwiperInstance } from "swiper/types";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
 import { Fragment, useEffect, useRef } from "react";
-import ContainerWithoutPadding from "@/components/Container/ContainerWithoutPadding";
+import Container from "@/components/Container/Container";
 
 import ProgressBar from "../../UI/ProgressBar";
 import { testimonials } from "@/constants/testimonials";
@@ -25,7 +25,7 @@ const TestimonialsSlider = () => {
 
   return (
     <>
-      <ContainerWithoutPadding>
+      <Container backgroundColor="var(--main-bg)">
         <h2 className={css.titleHidden}>
           Відгуки про Онлайн-школу англійської мови Затишна
         </h2>
@@ -35,7 +35,7 @@ const TestimonialsSlider = () => {
             modules={[Navigation, Autoplay]}
             pagination={{ clickable: true }}
             autoplay={{ delay: 7000, disableOnInteraction: false }}
-            spaceBetween={10}
+            spaceBetween={20}
             slidesPerView={1}
             loop={true}
             className={css.customSwiper}
@@ -101,7 +101,7 @@ const TestimonialsSlider = () => {
             Дізнатись більше
           </LinkButton>
         </div>
-      </ContainerWithoutPadding>
+      </Container>
     </>
   );
 };

@@ -9,7 +9,6 @@ export default function HomePage() {
   return (
     <div className={css.homePage}>
       <Hero />
-
       <section className={`section ${css.sasha}`} id="info">
         <Sasha />
       </section>

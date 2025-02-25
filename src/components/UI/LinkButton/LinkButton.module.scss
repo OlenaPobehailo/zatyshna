@@ -4,9 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.7rem;
-  min-width: 240px;
-  width: fit-content;
+  width: 100%;
+  padding: 0.8rem;
 
   font-size: 1rem;
   font-weight: 600;
@@ -14,19 +13,24 @@
   text-align: center;
 
   border: none;
-  border-radius: 8px;
+  border-radius: 25px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15),
     -4px -4px 10px rgba(255, 255, 255, 1);
 
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
-  @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 1.1rem;
+  @media screen and (min-width: $breakpoint-mobile-large) {
+    width: 320px;
   }
 
-  @media screen and (min-width: $breakpoint-desktop) {
+  @media screen and (min-width: $breakpoint-tablet) {
     font-size: 1.2rem;
+  }
+  
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 1.4rem;
+    width: 400px;
   }
 }
 

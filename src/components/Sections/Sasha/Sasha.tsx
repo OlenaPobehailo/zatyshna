@@ -3,10 +3,10 @@ import Link from "next/link";
 import Icon from "@/components/UI/Icon";
 import Container from "@/components/Container";
 import css from "./Sasha.module.scss";
-
+import "../../../styles/globals.scss";
 const Sasha = () => {
   return (
-    <Container>
+    <Container backgroundColor="var(--main-bg)">
       <div className={css.info}>
         <ul className={css.description}>
           <li>
@@ -22,7 +22,10 @@ const Sasha = () => {
           </li>
           <li>
             <Icon name="icon-arrow" className={`${css.icon} ${css.arrow}`} />
-            Тоді тобі до&nbsp;<Link className={css.link} href="/about">Zatyshna!</Link>
+            Тоді тобі до&nbsp;
+            <Link className={css.link} href="/about">
+              Zatyshna!
+            </Link>
           </li>
         </ul>
 
@@ -57,7 +60,10 @@ const Sasha = () => {
             </li>
             <li>
               <Icon name="icon-arrow" className={`${css.icon} ${css.arrow}`} />
-              Тоді тобі до&nbsp;<Link className={css.link} href="/about">Zatyshna!</Link>
+              Тоді тобі до&nbsp;
+              <Link className={css.link} href="/about">
+                Zatyshna!
+              </Link>
             </li>
           </ul>
         </div>
