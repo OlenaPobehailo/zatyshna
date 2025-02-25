@@ -10,7 +10,15 @@ export default function HomePage() {
     <div className={css.homePage}>
       <Hero />
       <section className={`section ${css.sasha}`} id="info">
-        <Sasha />
+        <div
+          style={{
+            maxWidth: "fit-content",
+            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
+            margin: "0 auto",
+          }}
+        >
+          <Sasha />
+        </div>
       </section>
 
       <section className={`section light ${css.features}`}>

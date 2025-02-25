@@ -115,6 +115,10 @@ img {
   flex-direction: column;
   gap: 16px;
 
+  max-width: fit-content;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+
   @media screen and (min-width: $breakpoint-tablet) {
     display: block;
     // padding: 64px 0;
