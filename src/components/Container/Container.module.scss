@@ -6,27 +6,27 @@
   padding: 8px;
 
   @media screen and (min-width: $breakpoint-mobile-large) {
-    max-width: calc($breakpoint-mobile-large - 16px);
+    min-width: calc($breakpoint-mobile-large - 16px);
     padding: 16px;
   }
 
   @media screen and (min-width: $breakpoint-tablet) {
-    max-width: calc($breakpoint-tablet - 24px);
+    min-width: calc($breakpoint-tablet - 24px);
     padding: 24px;
   }
 
   @media screen and (min-width: $breakpoint-laptop) {
-    max-width: calc($breakpoint-laptop - 36px);
+    min-width: calc($breakpoint-laptop - 36px);
     padding: 36px;
   }
 
   @media screen and (min-width: $breakpoint-laptop-large) {
-    max-width: calc($breakpoint-laptop-large - 48px);
+    min-width: calc($breakpoint-laptop-large - 48px);
     padding: 48px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    max-width: calc($breakpoint-desktop - 300px);
+    min-width: calc($breakpoint-desktop - 300px);
     padding: 64px;
   }
 }
