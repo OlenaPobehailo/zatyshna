@@ -41,9 +41,9 @@ const Sasha = () => {
           <Image
             className={css.photo}
             src="/assets/images/main-photo.jpg"
-            width="959"
-            height="1280"
-            alt=""
+            width={959}
+            height={1280}
+            alt="Олександра засновниця школи Zatyshna"
           />
         </div>
 

@@ -48,8 +48,8 @@ const TestimonialsSlider = () => {
                     className={css.testimonialPhoto}
                     src={testimonial.photo}
                     alt={testimonial.name}
-                    width="100"
-                    height="100"
+                    width={100}
+                    height={100}
                   />
                 </div>
                 <p className={css.testimonialName}>{testimonial.name}</p>

@@ -10,8 +10,8 @@ const Contacts = () => {
         <div className={css.buttonWrapper}>
           <Image
             src="/assets/images/1.gif"
-            width="290"
-            height="230"
+            width={290}
+            height={230}
             alt="Команда турботи"
             className={css.image}
             unoptimized={true}
@@ -36,8 +36,8 @@ const Contacts = () => {
         <div className={css.buttonWrapper}>
           <Image
             src="/assets/images/2.gif"
-            width="700"
-            height="700"
+            width={700}
+            height={700}
             alt="Команда турботи"
             className={css.image}
             unoptimized={true}
@@ -62,8 +62,8 @@ const Contacts = () => {
         <div className={css.buttonWrapper}>
           <Image
             src="/assets/images/3.gif"
-            width="290"
-            height="230"
+            width={290}
+            height={230}
             alt="Команда турботи"
             className={css.image}
             style={{ maxWidth: "290px" }}
