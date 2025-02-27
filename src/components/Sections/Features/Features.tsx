@@ -1,5 +1,6 @@
+"use client";
+
 import Container from "@/components/Container";
-import Icon from "../../UI/Icon";
 import LinkButton from "@/components/UI/LinkButton";
 import css from "./Features.module.scss";
 
@@ -10,37 +11,31 @@ const Features = () => {
         Особливості онлайн-школи англійської мови Затишна
       </h2>
 
-      <Container backgroundColor="var(--white-color)">
+      <Container >
         <ul className={css.featuresList}>
           <li>
-            <Icon name="icon-heart" className={css.icon} />
             <span>Заняття проводяться за неймовірними матеріалами!</span>
           </li>
           <li>
-            <Icon name="icon-heart" className={css.icon} />
             <span> Розмовні заняття за серіалами та фільмами</span>
           </li>
           <li>
-            <Icon name="icon-heart" className={css.icon} />
             <span>
               Чай та кавка посеред заняття для ще більш затишної атмосфери
             </span>
           </li>
           <li>
-            <Icon name="icon-heart" className={css.icon} />
-            <span>Цікава домашка</span>
+            <span>Цікава домашка яку хочеться виконувати</span>
           </li>
           <li>
-            <Icon name="icon-heart" className={css.icon} />
             <span>Індивідуальна програма та підхід під кожного учня</span>
           </li>
           <li>
-            <Icon name="icon-heart" className={css.icon} />
             <span>Гарантія результату</span>
           </li>
         </ul>
 
-        <div className={css.buttonWrapper}>
+        <div className={css.btnWrapper}>
           <LinkButton
             name="primary"
             href="https://t.me/zatyshna_support"

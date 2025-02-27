@@ -1,4 +1,4 @@
-@import "../../../styles/variables.scss";
+@use "../../../styles/variables.scss" as *;
 
 .testimonials.accent {
   background-color: var(--main-bg);
@@ -149,6 +149,7 @@
 
   @media screen and (min-width: $breakpoint-tablet) {
     flex-direction: row;
+    gap: 2rem;
   }
 }
 
@@ -245,6 +246,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   .custom-swiper-prev,
   .custom-swiper-next {
     top: 30%;

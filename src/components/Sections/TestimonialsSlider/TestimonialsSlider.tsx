@@ -8,7 +8,7 @@ import "swiper/swiper-bundle.css";
 import { Swiper as SwiperInstance } from "swiper/types";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Container from "@/components/Container/Container";
 
 import ProgressBar from "../../UI/ProgressBar";
@@ -18,10 +18,6 @@ import css from "@/components/Sections/TestimonialsSlider/TestimonialsSlider.mod
 
 const TestimonialsSlider = () => {
   const swiperRef = useRef<SwiperInstance | null>(null);
-  console.log("SwiperSlide класи:", css.swiperSlide);
-  useEffect(() => {
-    console.log("SwiperSlide класи в продакшені:", css.swiperSlide);
-  }, []);
 
   return (
     <Container backgroundColor="var(--main-bg)">

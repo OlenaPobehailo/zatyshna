@@ -1,4 +1,4 @@
-@import "../styles/variables.scss";
+@use "../styles/variables" as *;
 
 .page {
   display: grid;
@@ -105,5 +105,6 @@
 
 .whiteBackground {
   background-color: var(--white-color);
+  gap: 2rem;
 
 }

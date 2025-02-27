@@ -1,4 +1,4 @@
-@import "../../../styles/variables.scss";
+@use "../../../styles/variables.scss" as *;
 
 
 .titleHidden {
@@ -217,5 +217,6 @@
 
   @media screen and (min-width: $breakpoint-tablet) {
     flex-direction: row;
+    gap: 2rem;
   }
 }

@@ -36,14 +36,14 @@ const Hero = () => {
       shape: "rect" as const,
     },
     {
-      coords: "450,450,850,250",
+      coords: "400,500,900,300",
       href: "/contacts",
       title: "Вежа зв'язку",
       alt: "Вежа зв'язку",
       shape: "rect" as const,
     },
     {
-      coords: "1150,450,1550,250",
+      coords: "1050,450,1550,300",
       href: "/products",
       title: "Вежа скарбів",
       alt: "Вежа скарбів",

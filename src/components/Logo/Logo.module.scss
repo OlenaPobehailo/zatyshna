@@ -1,6 +1,7 @@
-@import "../../styles/variables.scss";
+@use "../../styles/variables.scss" as *;
 
 .logo {
+  width: fit-content;
   font-family: "SeaweedScript";
   font-weight: 400;
   font-style: italic;
@@ -9,12 +10,20 @@
   transition: all 0.3s ease;
   z-index: 5;
 
+
+  border: 3px solid var(--white-color);
+  border-radius: 50px;
+  padding: 0 16px;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--pink-color);
+
   @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 2.2rem;
+    // font-size: 2.2rem;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 2.5rem;
+    // font-size: 2.2rem;  
   }
 
   &:hover {

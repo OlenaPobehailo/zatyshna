@@ -1,33 +1,39 @@
-@import "../../styles/variables.scss";
+@use "../../styles/variables.scss" as *;
 
 .container {
   max-width: $breakpoint-mobile;
+  height: 100%;
   margin: 0 auto;
-  padding: 8px;
+  padding: 16px 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // align-items: center;
 
   @media screen and (min-width: $breakpoint-mobile-large) {
     min-width: calc($breakpoint-mobile-large - 16px);
-    padding: 16px;
+    padding: 32px 16px;
   }
 
   @media screen and (min-width: $breakpoint-tablet) {
-    min-width: calc($breakpoint-tablet - 24px);
-    padding: 24px;
+    min-width: calc($breakpoint-tablet - 21px);
+    padding: 42px 21px;
   }
 
   @media screen and (min-width: $breakpoint-laptop) {
-    min-width: calc($breakpoint-laptop - 36px);
-    padding: 36px;
+    min-width: calc($breakpoint-laptop - 24px);
+    padding: 48px 24px;
   }
 
   @media screen and (min-width: $breakpoint-laptop-large) {
-    min-width: calc($breakpoint-laptop-large - 48px);
-    padding: 48px;
+    min-width: calc($breakpoint-laptop-large - 36px);
+    padding: 72px 36px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    min-width: calc($breakpoint-desktop - 300px);
-    padding: 64px;
+    min-width: calc($breakpoint-desktop - 96px);
+    padding: 96px 48px;
   }
 }
 
