@@ -116,7 +116,7 @@ img {
   gap: 16px;
 
   max-width: fit-content;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
 
   @media screen and (min-width: $breakpoint-tablet) {
@@ -142,13 +142,13 @@ img {
   margin: -1px;
 }
 
-// .section:nth-child(even) {
-//   background-color: var(--main-bg);
-// }
+.section:nth-child(odd) {
+  background-color: var(--main-bg);
+}
 
-// .section:nth-child(odd) {
-//   background-color: var(--white-color);
-// }
+.section:nth-child(even) {
+  background-color: var(--white-color);
+}
 
 .section.accent {
   background-color: var(--main-bg);

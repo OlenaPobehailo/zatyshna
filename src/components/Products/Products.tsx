@@ -7,7 +7,9 @@ const Products = () => {
     <div className={css.container}>
       <div className={css.card}>
         <h3>
-          <Icon icon="mdi:monitor-shimmer" className={css.icon} />
+          <div className={css.iconWrapper}>
+            <Icon icon="mdi:monitor-shimmer" className={css.icon} />
+          </div>
           Марафони за серіалами та фільмами
         </h3>
 
@@ -44,7 +46,9 @@ const Products = () => {
 
       <div className={css.card}>
         <h3>
-          <Icon icon="mdi:book-open-variant" className={css.icon} />
+          <div className={css.iconWrapper}>
+            <Icon icon="mdi:book-open-variant" className={css.icon} />
+          </div>
           Книжковий клуб!
         </h3>
 
@@ -75,8 +79,10 @@ const Products = () => {
 
       <div className={css.card}>
         <h3>
-          <Icon icon="material-symbols:school" className={css.icon} /> Заняття
-          англійської з вчителем!
+          <div className={css.iconWrapper}>
+            <Icon icon="material-symbols:school" className={css.icon} />
+          </div>
+          Заняття англійської з вчителем!
         </h3>
         <p>
           Ми визначимо твій рівень на пробному занятті та проведемо тебе за

@@ -20,7 +20,9 @@ const TestimonialsSlider = () => {
   const swiperRef = useRef<SwiperInstance | null>(null);
 
   return (
-    <Container backgroundColor="var(--main-bg)">
+    <Container
+    // backgroundColor="var(--main-bg)"
+    >
       <h2 className={css.titleHidden}>
         Відгуки про Онлайн-школу англійської мови Затишна
       </h2>
@@ -41,13 +43,15 @@ const TestimonialsSlider = () => {
               className={`swiperSlide ${css.swiperSlide}`}
             >
               <div className={css.testimonialHeader}>
-                <Image
-                  className={css.testimonialPhoto}
-                  src={testimonial.photo}
-                  alt={testimonial.name}
-                  width="100"
-                  height="100"
-                />
+                <div className={css.testimonialPhotoWrapper}>
+                  <Image
+                    className={css.testimonialPhoto}
+                    src={testimonial.photo}
+                    alt={testimonial.name}
+                    width="100"
+                    height="100"
+                  />
+                </div>
                 <p className={css.testimonialName}>{testimonial.name}</p>
               </div>
 

@@ -10,7 +10,9 @@ const About = () => {
           <ul className={css.features}>
             <li className={css.feature}>
               <h3>
-                <Icon icon="mdi:home-heart" className={css.icon} />
+                <div className={css.iconWrapper}>
+                  <Icon icon="mdi:home-heart" className={css.icon} />
+                </div>
                 Живі уроки без зубріння
               </h3>
               <p>
@@ -21,7 +23,9 @@ const About = () => {
 
             <li className={css.feature}>
               <h3>
-                <Icon icon="mdi:coffee-outline" className={css.icon} />
+                <div className={css.iconWrapper}>
+                  <Icon icon="mdi:coffee-outline" className={css.icon} />
+                </div>
                 Комфорт, який відчувається
               </h3>
               <p>
@@ -32,7 +36,9 @@ const About = () => {
 
             <li className={css.feature}>
               <h3>
-                <Icon icon="mdi:target" className={css.icon} />
+                <div className={css.iconWrapper}>
+                  <Icon icon="mdi:target" className={css.icon} />
+                </div>
                 &nbsp;Результат, за який ми відповідаємо
               </h3>
               <p>
@@ -63,7 +69,9 @@ const About = () => {
 
             <li className={css.feature}>
               <h3>
-                <Icon icon="mdi:web" className={css.icon} />
+                <div className={css.iconWrapper}>
+                  <Icon icon="mdi:web" className={css.icon} />
+                </div>
                 Англійська, яка стане частиною твого життя
               </h3>
               <p>
@@ -98,7 +106,9 @@ const About = () => {
 
             <li className={css.feature}>
               <h3>
-                <Icon icon="mdi:note-edit-outline" className={css.icon} />
+                <div className={css.iconWrapper}>
+                  <Icon icon="mdi:note-edit-outline" className={css.icon} />
+                </div>
                 Домашка, яку хочеться виконувати
               </h3>
               <p>

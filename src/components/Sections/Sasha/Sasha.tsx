@@ -6,22 +6,30 @@ import css from "./Sasha.module.scss";
 import "../../../styles/globals.scss";
 const Sasha = () => {
   return (
-    <Container backgroundColor="var(--main-bg)">
+    <Container
+    // backgroundColor="var(--main-bg)"
+    >
       <div className={css.info}>
         <ul className={css.description}>
           <li>
-            <Icon
-              name="icon-question"
-              className={`${css.icon} ${css.question}`}
-            />
+            <div className={css.customIconWrapper}>
+              <Icon
+                name="icon-question"
+                className={`${css.icon} ${css.question}`}
+              />
+            </div>
             Набридли нудні підручники та вчителі, які засуджують за помилки?
           </li>
           <li>
-            <Icon name="icon-check" className={`${css.icon} ${css.check}`} />
+            <div className={css.customIconWrapper}>
+              <Icon name="icon-check" className={`${css.icon} ${css.check}`} />
+            </div>
             Хочеш заговорити та мати твердий С1?
           </li>
           <li>
-            <Icon name="icon-arrow" className={`${css.icon} ${css.arrow}`} />
+            <div className={css.customIconWrapper}>
+              <Icon name="icon-arrow" className={`${css.icon} ${css.arrow}`} />
+            </div>
             Тоді тобі до&nbsp;
             <Link className={css.link} href="/about">
               Zatyshna!
@@ -48,18 +56,30 @@ const Sasha = () => {
           </div>
           <ul className={css.descriptionDesktop}>
             <li>
-              <Icon
-                name="icon-question"
-                className={`${css.icon} ${css.question}`}
-              />
+              <div className={css.customIconWrapper}>
+                <Icon
+                  name="icon-question"
+                  className={`${css.icon} ${css.question}`}
+                />
+              </div>
               Набридли нудні підручники та вчителі, які засуджують за помилки?
             </li>
             <li>
-              <Icon name="icon-check" className={`${css.icon} ${css.check}`} />
+              <div className={css.customIconWrapper}>
+                <Icon
+                  name="icon-check"
+                  className={`${css.icon} ${css.check}`}
+                />
+              </div>
               Хочеш заговорити та мати твердий С1?
             </li>
             <li>
-              <Icon name="icon-arrow" className={`${css.icon} ${css.arrow}`} />
+              <div className={css.customIconWrapper}>
+                <Icon
+                  name="icon-arrow"
+                  className={`${css.icon} ${css.arrow}`}
+                />
+              </div>
               Тоді тобі до&nbsp;
               <Link className={css.link} href="/about">
                 Zatyshna!

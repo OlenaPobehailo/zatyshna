@@ -7,7 +7,8 @@
   // padding-top: 48px;
 
   // background-color: var(--main-bg);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  // background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(135deg, #fef3ea 0%, #f1cd853f 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -57,6 +58,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   // background-color: var(--white-color);
+}
+
+.mainBg {
+  max-width: fit-content;
+  margin: 0 auto;
+  // background: linear-gradient(0deg, rgba(255, 255, 255, 0.597), rgba(255, 255, 255, 0.3)), url("/assets/images/gradient.svg") no-repeat center center/cover;
+  // background-color: var(--main-bg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2)
 }
 
 .main {

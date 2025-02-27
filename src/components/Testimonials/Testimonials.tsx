@@ -14,7 +14,7 @@ const Testimonials = () => {
   }, []);
 
   if (!mounted) {
-    return null; 
+    return null;
   }
 
   return (
@@ -24,13 +24,15 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className={css.testimonial}>
               <div className={css.testimonialHeader}>
-                <Image
-                  className={css.testimonialPhoto}
-                  src={testimonial.photo}
-                  alt={testimonial.name}
-                  width={100}
-                  height={100}
-                />
+                <div className={css.testimonialPhotoWrapper}>
+                  <Image
+                    className={css.testimonialPhoto}
+                    src={testimonial.photo}
+                    alt={testimonial.name}
+                    width={100}
+                    height={100}
+                  />
+                </div>
                 <p className={css.testimonialName}>{testimonial.name}</p>
               </div>
 
@@ -52,7 +54,6 @@ const Testimonials = () => {
           ))}
         </Masonry>
       </ResponsiveMasonry>
-      
     </div>
   );
 };

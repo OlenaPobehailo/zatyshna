@@ -1,16 +1,22 @@
 import LinkButton from "@/components/UI/LinkButton";
 import Container from "../../Container";
 import css from "./Lessons.module.scss";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Lessons = () => {
   return (
-    <Container backgroundColor="var(--white-color)">
+    <Container
+    // backgroundColor="var(--white-color)"
+    >
       <h2 className={css.titleHidden}>
         Індивідуальні та групові заняття в Онлайн-школі англійської мови Затишна
       </h2>
       <ul className={css.lessonList}>
         <li className={css.lessonItem}>
           <div className={css.lessonHeader}>
+            <div className={css.iconWrapper}>
+              <Icon icon="mdi:account" className={css.icon} />
+            </div>
             <h3 className={css.lessonTitle}>Індивідуальні заняття</h3>
             {/* <p className={css.lessonPrice}>500 грн / 60 хвилин</p> */}
           </div>
@@ -24,6 +30,9 @@ const Lessons = () => {
 
         <li className={css.lessonItem}>
           <div className={css.lessonHeader}>
+            <div className={css.iconWrapper}>
+              <Icon icon="mdi:account-group" className={css.icon} />
+            </div>
             <h3 className={css.lessonTitle}>
               Групові заняття <br />
             </h3>
@@ -40,6 +49,9 @@ const Lessons = () => {
 
         <li className={css.lessonItem}>
           <div className={css.lessonHeader}>
+            <div className={css.iconWrapper}>
+              <Icon icon="mdi:school" className={css.icon} />
+            </div>
             <h3 className={css.lessonTitle}>
               Заняття з Олександрою <br />
               <span>(засновниця школи)</span>
