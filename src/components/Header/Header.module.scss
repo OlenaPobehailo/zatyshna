@@ -6,7 +6,7 @@
   left: 0;
   right: 0;
   width: 100%;
-  padding: 0.1rem 1rem;
+  padding: 0.3rem 1rem;
   background-color: var(--header-bg);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
   z-index: 20;
@@ -43,7 +43,7 @@
   }
 
   @media screen and (min-width: 920px) {
-    gap: 2rem;
+    gap: 1.5rem;
     font-size: 1.2rem;
   }
 
@@ -68,14 +68,14 @@
 
 .navLink {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: var(--text-color-light);
+  color: var(--white-color);
   display: inline-block;
   transition: color 0.3s ease, transform 0.3s ease;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 0;
   }
 

@@ -1,6 +1,6 @@
 import Contacts from "@/components/Contacts";
+import Container from "@/components/Container/Container";
 import css from "../page.module.scss";
-import Container from "@/components/Container";
 
 export const metadata = {
   title: "Затишна | Контакти",
@@ -21,16 +21,15 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <div className={css.page}>
-      <section className={css.intro}>
-        <Container>
+      <Container>
+        <section className={css.intro}>
           <h1 className={css.pageTitle}>Контакти</h1>
           <p className={css.pageSubtitle}>
             Навчання – це не лише уроки, а й спільнота, що надихає. Зв’яжися з
             нами, і ми разом зробимо цей шлях цікавим та продуктивним!
           </p>
-        </Container>
-      </section>
-
+        </section>
+      </Container>
       <Contacts />
     </div>
   );

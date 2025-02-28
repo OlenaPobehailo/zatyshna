@@ -4,8 +4,6 @@ import Link from "next/link";
 import {
   FaTelegram,
   FaInstagram,
-  FaFacebook,
-  FaLinkedin,
 } from "react-icons/fa";
 import css from "./Footer.module.scss";
 import Logo from "../Logo";
@@ -67,12 +65,12 @@ const Footer = () => {
             <a href="" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            {/* <a href="" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
             </a>
             <a href="" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
-            </a>
+            </a> */}
           </div>
         </div>
         <p className={css.copy}>© 2025 Zatyshna</p>

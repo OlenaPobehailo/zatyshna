@@ -97,8 +97,12 @@
     font-size: 18px;
 
     p {
-      margin-bottom: 20px;
-      text-align: left;
+      // margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p + p {
+      margin-bottom: 64px;
     }
 
     .buttonWrapper {

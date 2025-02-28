@@ -7,9 +7,7 @@ const page = () => {
     <div className="notFound">
       <Container>
         <h1 className="heading">404</h1>
-        <p className="text">
-          Схоже, ви заблукали.
-        </p>
+        <p className="text">Схоже, ви заблукали.</p>
 
         <p className="text">Але не хвилюйтеся, ми допоможемо знайти шлях! </p>
         <div className={css.buttonWrapper}>

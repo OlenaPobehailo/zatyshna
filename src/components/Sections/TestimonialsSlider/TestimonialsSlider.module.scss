@@ -38,15 +38,14 @@
 }
 
 .testimonialPhoto {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 0.5rem;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  object-fit: cover;
+  // object-fit: cover;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    width: 160px;
-    height: 160px;
+    width: 125px;
+    height: 125px;
   }
 }
 
@@ -54,11 +53,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   width: fit-content;
-  padding: 1.5rem;
+  padding: 1rem;
   margin: 0 auto 0.5rem;
   border-radius: 50%;
-  // border: 2px solid var(--pink-color);
+
   backdrop-filter: blur(8px);
   background: var(--main-bg);
   box-shadow:
@@ -219,14 +219,14 @@
 
   @media screen and (min-width: $breakpoint-tablet) {
     width: 600;
-    padding: 3rem;
+    padding: 1.5rem;
     min-height: 350px;
   }
 
   @media screen and (min-width: $breakpoint-laptop) {
     display: flex !important;
     flex-direction: row !important;
-    gap: 3rem;
+    gap: 2rem;
     border-radius: 10px;
     padding: 2rem;
   }
