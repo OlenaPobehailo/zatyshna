@@ -19,7 +19,7 @@
 
 .customSwiper {
   --swiper-theme-color: var(--pink-color);
-  padding: 0 0.1rem 0 0.1rem;
+  padding: 0 2px 0 2px;
 }
 
 .customSwiper :global(.swiper-slide) {
@@ -27,7 +27,7 @@
 }
 
 .testimonialHeader {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   text-align: center;
 
   @media screen and (min-width: $breakpoint-laptop) {
@@ -55,8 +55,8 @@
   align-items: center;
   flex-grow: 1;
   width: fit-content;
-  padding: 1rem;
-  margin: 0 auto 0.5rem;
+  padding: 16px;
+  margin: 0 auto 8px;
   border-radius: 50%;
 
   backdrop-filter: blur(8px);
@@ -81,22 +81,22 @@
 
 .testimonialTextWrapper {
   display: block;
-  margin-bottom: 2rem;
-  font-size: 0.8rem;
+  margin-bottom: 32px;
+  font-size: 14px;
 
   @media screen and (min-width: $breakpoint-mobile-large) {
-    font-size: 1rem;
+    font-size: 16px;
     margin-bottom: auto;
   }
 
   @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 
 .testimonialText {
   display: inline-block;
-  margin-bottom: 0.2rem;
+  margin-bottom: 4px;
   line-height: 1.25;
 }
 
@@ -116,7 +116,7 @@
 
 .testimonialName {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 24px;
   margin-bottom: 10px;
   color: var(--pink-color);
 }
@@ -133,7 +133,7 @@
   color: var(--pink-color);
   border: none;
   text-decoration: underline;
-  font-size: 0.9rem;
+  font-size: 15px;
   font-weight: 500;
   font-style: italic;
   cursor: pointer;
@@ -141,11 +141,11 @@
   transition: all 0.3s ease-in-out;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 1.1rem;
+    font-size: 18px;
   }
 }
 
@@ -155,7 +155,7 @@
 }
 
 .modalParagraph {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .buttonWrapper {
@@ -163,21 +163,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 32px;
 
 
   @media screen and (min-width: $breakpoint-tablet) {
     flex-direction: row;
-    gap: 2rem;
+    gap: 32px;
   }
 }
 
 .swiperWrapper {
   width: 95%;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 16px;
   position: relative;
 
   @media screen and (min-width: $breakpoint-mobile-large) {
@@ -196,8 +196,8 @@
 .customSwiper {
   width: 100%;
   height: auto;
-  padding: 0.8rem;
-  padding-bottom: 2.5rem;
+  padding: 12px 0;
+  padding-bottom: 40px;
 }
 
 .swiperSlide {
@@ -206,7 +206,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 1rem 0.8rem 2rem;
+  padding: 16px 12px 32px;
   background: var(--white-color);
   border-radius: 140px 140px 10px 10px;
   border: 1px solid var(--pink-color);
@@ -219,16 +219,16 @@
 
   @media screen and (min-width: $breakpoint-tablet) {
     width: 600;
-    padding: 1.5rem;
+    padding: 24px;
     min-height: 350px;
   }
 
   @media screen and (min-width: $breakpoint-laptop) {
     display: flex !important;
     flex-direction: row !important;
-    gap: 2rem;
+    gap: 32px;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 32px;
   }
 }
 
@@ -251,18 +251,18 @@
 }
 
 .customSwiperPrev {
-  left: -1rem;
+  left: -16px;
 
   @media screen and (min-width: $breakpoint-laptop) {
-    left: -4rem;
+    left: -64px;
   }
 }
 
 .customSwiperNext {
-  right: -1rem;
+  right: -16px;
 
   @media screen and (min-width: $breakpoint-laptop) {
-    right: -4rem;
+    right: -64px;
   }
 }
 
@@ -274,22 +274,22 @@
   }
 
   .custom-swiper-prev {
-    left: 1rem;
+    left: 16px;
   }
 
   .custom-swiper-next {
-    right: 1rem;
+    right: 16px;
   }
 }
 
 .icon {
-  font-size: 4rem;
+  font-size: 64px;
 
   @media screen and (min-width: $breakpoint-mobile-large) {
-    font-size: 5rem;
+    font-size: 80px;
   }
 
   @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 6rem;
+    font-size: 96px;
   }
 }

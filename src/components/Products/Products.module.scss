@@ -26,22 +26,22 @@
 .card h3 {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 16px;
   color: var(--pink-color);
 
   @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 
 .card p {
-  margin-bottom: 1.8rem;
-  font-size: 1rem;
+  margin-bottom: 28px;
+  font-size: 16px;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 1.2rem;
+    font-size: 20px;
   }
 }
 
@@ -50,11 +50,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 16px;
 
   @media screen and (min-width: $breakpoint-tablet) {
     flex-direction: row;
-    gap: 2rem;
+    gap: 32px;
   }
 }
 
@@ -66,12 +66,12 @@
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 32px;
   color: var(--pink-color);
   transition: transform 0.3s ease, color 0.3s ease;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 2.5rem;
+    font-size: 40px;
   }
 }
 
@@ -80,7 +80,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 16px;
   border-radius: 50%;
   border: 1px solid var(--pink-color);
   backdrop-filter: blur(8px);

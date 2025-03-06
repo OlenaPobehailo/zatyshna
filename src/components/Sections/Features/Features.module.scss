@@ -48,11 +48,11 @@
 
   @media screen and (min-width: $breakpoint-tablet) {
     grid-template-columns: 1fr 1fr;
-    row-gap: 30px;
+    row-gap: 32px;
   }
 
   @media screen and (min-width: $breakpoint-desktop) {
-    margin-bottom: 4rem;
+    margin-bottom: 64px;
   }
 }
 
@@ -62,7 +62,7 @@
   align-items: center;
 
   min-height: 48px;
-  padding: 0.3rem 1rem;
+  padding: 4px 16px;
   border: 3px solid var(--white-color);
   border-radius: 50px;
 
@@ -78,7 +78,7 @@
 
   @media screen and (min-width: $breakpoint-tablet) {
     min-height: 80px;
-    padding: 1rem 1.5rem;
+    padding: 16px 24px;
     font-size: 18px;
   }
 
@@ -156,13 +156,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 32px;
 
   margin-top: auto !important;
   margin-bottom: 0;
 
   @media screen and (min-width: $breakpoint-tablet) {
     flex-direction: row;
-    gap: 3rem;
+    gap: 48px;
   }
 }

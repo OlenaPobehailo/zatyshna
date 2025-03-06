@@ -13,17 +13,17 @@
   font-family: "SeaweedScript";
   font-weight: 400;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 24px;
   
   z-index: 5;
   transition: all 0.3s ease;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 1.8rem;
+    font-size: 28px;
   }
   
   @media screen and (min-width: $breakpoint-desktop) {
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   &:hover {

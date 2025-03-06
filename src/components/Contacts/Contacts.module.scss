@@ -4,12 +4,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
- 
+
 }
 
 .contactWrapper {
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 32px 16px;
   margin: 0 auto;
   text-align: center;
 }
@@ -26,13 +26,13 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 16px;
   }
 }
 
 .contactItem {
-  font-size: 1.2rem;
-  margin: 0 0 2.5rem;
+  font-size: 20px;
+  margin: 0 0 40px;
 
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -45,11 +45,11 @@
 
   width: 280px;
   min-height: 100px;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
 
   background-color: var(--pink-color);
   color: var(--white-color);
-  border-radius: 0.5rem;
+  border-radius: 8px;
   transition: all 0.3s ease;
   z-index: 1;
 }
@@ -61,8 +61,8 @@
 }
 
 .icon {
-  margin-right: 0.5rem;
-  font-size: 1.5rem;
+  margin-right: 8px;
+  font-size: 24px;
   color: var(--white-color);
   margin-top: 8px;
   transition: all 0.3s ease;
@@ -70,17 +70,17 @@
 
 @media screen and (min-width: $breakpoint-tablet) {
   .icon {
-    font-size: 1.8rem;
+    font-size: 28px;
   }
 }
 
 @media screen and (min-width: $breakpoint-laptop-large) {
   .contacts {
-    padding: 2rem;
+    padding: 32px;
   }
 
   .icon {
-    font-size: 2rem;
+    font-size: 32px;
   }
 }
 
@@ -96,14 +96,14 @@
   width: 85%;
   height: auto;
   margin-bottom: -30px;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
   transition: transform 0.3s ease-in-out;
 }
 
-.button:hover + .image,
+.button:hover+.image,
 .buttonWrapper:hover .image {
   transform: translateY(-30px);
 }

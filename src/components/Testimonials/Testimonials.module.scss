@@ -9,7 +9,7 @@
   max-width: 800px;
   background: white;
   margin: 0 auto 24px;
-  padding: 24px;
+  padding: 16px;
   border-radius: 10px;
   border: 1px solid var(--pink-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -20,7 +20,7 @@
     top: 80px;
 
     min-height: 80vh;
-    padding: 28px;
+    padding: 24px;
     margin-bottom: 100px;
 
 
@@ -28,18 +28,36 @@
       box-shadow: none;
     }
   }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    min-height: 50vh;
+    top: 100px;
+    padding: 32px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+  }
 }
 
 .testimonialHeader {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   text-align: center;
 
   @media screen and (min-width: $breakpoint-tablet) {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 32px;
     text-align: left;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-direction: column;
+    width: 150%;
   }
 }
 
@@ -60,8 +78,8 @@
   justify-content: center;
   align-items: center;
   max-width: fit-content;
-  padding: 1rem;
-  margin: 0 auto 0.5rem;
+  padding: 16px;
+  margin: 0 auto 8px;
   border-radius: 50%;
   // border: 2px solid var(--pink-color);
   backdrop-filter: blur(8px);
@@ -73,7 +91,7 @@
     inset -4px -4px 12px rgba(0, 0, 0, 0.1);
 
   @media screen and (min-width: $breakpoint-tablet) {
-    padding: 1.5rem;
+    padding: 24px;
     flex-grow: 1;
   }
 
@@ -82,27 +100,29 @@
 .testimonialInfoWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: spaceBetween;
+  justify-content: space-between;
 
 }
 
 .testimonialTextWrapper {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 
-  @media screen and (min-width: $breakpoint-mobile-large) {
-    font-size: 1rem;
-  }
-
-  @media screen and (min-width: $breakpoint-tablet) {
-    font-size: 1.2rem;
-  }
 }
 
 .testimonialText {
   display: inline-block;
-  margin-bottom: 0.2rem;
+  margin-bottom: 4px;
   line-height: 1.25;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    font-size: 20px;
+  }
+
 }
 
 .line {
@@ -125,12 +145,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 16px;
+  margin-bottom: 32px;
 
   @media screen and (min-width: $breakpoint-tablet) {
     flex-direction: row;
-    gap: 2rem;
+    gap: 32px;
   }
 }
 
