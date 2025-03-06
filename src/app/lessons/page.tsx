@@ -1,8 +1,13 @@
-import Lessons from "@/components/Sections/Lessons";
+// import Lessons from "@/components/Sections/Lessons";
 import Container from "@/components/Container";
 import css from "../page.module.scss";
+import dynamic from "next/dynamic";
 
 export default function LessonsPage() {
+  const Lessons = dynamic(
+    () => import("@/components/Sections/Lessons/Lessons")
+  );
+
   return (
     <div className={css.page}>
       <Container>

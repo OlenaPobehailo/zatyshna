@@ -1,5 +1,31 @@
 @use "../../../styles/variables.scss" as *;
 
+.lessons {
+  min-height: 800px;
+  background: url("/assets/images/lessons-desktop.jpg") no-repeat center center/cover;
+  background-color: var(--white-color);
+  margin-top: -32px;
+  margin-bottom: -32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    min-height: 768px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)) url("/assets/images/lessons-desktop.jpg") no-repeat center center/cover;
+    margin-top: -64px;
+    margin-bottom: -64px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    background: url("/assets/images/lessons-desktop.jpg") no-repeat center center/cover;
+  }
+}
+
+.lessonsNoBg {
+  background: none !important;
+}
 
 .titleHidden {
   position: absolute;

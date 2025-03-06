@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
 import Burger from "./Burger";
@@ -8,6 +9,7 @@ import css from "./Header.module.scss";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const closeMenu = () => {
     setIsMenuOpen(false);
@@ -25,14 +27,26 @@ const Header = () => {
         <ul className={`${css.navList} ${isMenuOpen ? css.open : ""}`}>
           <li className={css.navItem}>
             <div className={css.dropdown}>
-              <Link href="/about" className={css.navLink} onClick={closeMenu}>
+              <Link
+                href="/about"
+                className={`${css.navLink} ${
+                  pathname === "/about" ? css.active : ""
+                }`}
+                onClick={closeMenu}
+              >
                 Про школу
               </Link>
             </div>
           </li>
           <li className={css.navItem}>
             <div className={css.dropdown}>
-              <Link href="/lessons" className={css.navLink} onClick={closeMenu}>
+              <Link
+                href="/lessons"
+                className={`${css.navLink} ${
+                  pathname === "/lessons" ? css.active : ""
+                }`}
+                onClick={closeMenu}
+              >
                 Уроки
               </Link>
             </div>
@@ -40,19 +54,33 @@ const Header = () => {
           <li className={css.navItem}>
             <Link
               href="/testimonials"
-              className={css.navLink}
+              className={`${css.navLink} ${
+                pathname === "/testimonials" ? css.active : ""
+              }`}
               onClick={closeMenu}
             >
               Відгуки
             </Link>
           </li>
           <li className={css.navItem}>
-            <Link href="/products" className={css.navLink} onClick={closeMenu}>
+            <Link
+              href="/products"
+              className={`${css.navLink} ${
+                pathname === "/products" ? css.active : ""
+              }`}
+              onClick={closeMenu}
+            >
               Продукти
             </Link>
           </li>
           <li className={css.navItem}>
-            <Link href="/contacts" className={css.navLink} onClick={closeMenu}>
+            <Link
+              href="/contacts"
+              className={`${css.navLink} ${
+                pathname === "/contacts" ? css.active : ""
+              }`}
+              onClick={closeMenu}
+            >
               Контакти
             </Link>
           </li>

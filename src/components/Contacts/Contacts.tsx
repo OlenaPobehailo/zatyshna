@@ -9,7 +9,7 @@ const Contacts = () => {
       <li className={css.contactItem}>
         <div className={css.buttonWrapper}>
           <Image
-            src="/assets/images/1.gif"
+            src="/assets/images/care-team.jpg"
             width={290}
             height={230}
             alt="Команда турботи"
@@ -35,7 +35,7 @@ const Contacts = () => {
       <li className={css.contactItem}>
         <div className={css.buttonWrapper}>
           <Image
-            src="/assets/images/2.gif"
+            src="/assets/images/pupils.jpg"
             width={700}
             height={700}
             alt="Команда турботи"
@@ -61,7 +61,7 @@ const Contacts = () => {
       <li className={css.contactItem}>
         <div className={css.buttonWrapper}>
           <Image
-            src="/assets/images/3.gif"
+            src="/assets/images/teachers.jpg"
             width={290}
             height={230}
             alt="Команда турботи"

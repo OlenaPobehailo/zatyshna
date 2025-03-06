@@ -45,6 +45,39 @@
   }
 }
 
+.cardQuestion {
+  margin-bottom: 8px !important;
+  color: var(--pink-color);
+  font-weight: 700;
+}
+
+.card ul {
+  margin-bottom: 16px;
+}
+
+.card li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 8px;
+  font-size: 16px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 20px;
+  }
+}
+
+.card li::before {
+  content: "\2714";
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 28px;
+  color: var(--pink-color);
+  line-height: 1;
+}
+
 .buttonWrapper {
   display: flex;
   flex-direction: column;
