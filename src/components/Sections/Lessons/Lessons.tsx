@@ -22,8 +22,9 @@ const Lessons = () => {
               <div className={css.iconWrapper}>
                 <Icon icon="mdi:account" className={css.icon} />
               </div>
-              <h3 className={css.lessonTitle}>Індивідуальні заняття</h3>
-              <p className={css.lessonPrice}>500 грн / 60 хвилин</p>
+              <h3 className={css.lessonTitle}>Заняття з вчителем школи</h3>
+              <p className={css.lessonSubtitle}>Індивідуальні заняття</p>
+              <p className={css.lessonPrice}>600 грн / 60 хвилин</p>
             </div>
             <ul className={css.lessonFeatures}>
               <li>Індивідуальний підхід</li>
@@ -39,10 +40,12 @@ const Lessons = () => {
                 <Icon icon="mdi:account-group" className={css.icon} />
               </div>
               <h3 className={css.lessonTitle}>
-                Групові заняття
+                Заняття з вчителем школи
               </h3>
-              <p className={css.lessonSubtitle}>(3-4 студенти)</p>
-              <p className={css.lessonPrice}>300 грн / 60 хвилин</p>
+              <p className={css.lessonSubtitle}>Групові заняття (4 студенти)
+
+              </p>
+              <p className={css.lessonPrice}>350 грн / 60 хвилин</p>
             </div>
             <ul className={css.lessonFeatures}>
               <li>Робота в групах</li>
