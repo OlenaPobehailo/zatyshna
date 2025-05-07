@@ -21,9 +21,9 @@ const Products = () => {
           (Друзі / Пліткарка / Гаррі Поттер / Емілі в Парижі / Бріджертони / Гра
           Престолів та інші)
         </p>
-        {/* <p>
-            <strong>300 грн</strong> / тиждень навчання
-          </p> */}
+        <p className={css.cardPrice}>
+          <strong>300 грн</strong> / тиждень навчання
+        </p>
         <p className={css.cardQuestion}>Що отримаєш?</p>
 
         <ul>
@@ -63,9 +63,9 @@ const Products = () => {
           Обираємо 1 книжку щомісяця та робимо Zoom meetings, де обговорюємо
           персонажів та події!
         </p>
-        {/* <p>
-            <strong>500 грн</strong> / місяць
-          </p> */}
+        <p className={css.cardPrice}>
+          <strong>500 грн</strong> / місяць
+        </p>
         <p className={css.cardQuestion}>Що отримаєш?</p>
 
         <ul>
